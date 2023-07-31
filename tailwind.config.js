@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'main': 'url(/img/bg-main.png)'
+        'main': 'url(/img/bg-main.png)',
+        'paper': 'url(/img/bg-paper.png)'
       },
       colors:{
         'bluejays':'#0073B2',

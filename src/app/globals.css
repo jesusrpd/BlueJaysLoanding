@@ -2,3 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.negative-position{
+    left: -20px;
+    bottom: -150px;
+}
+
+.bg-paper-effect{
+    position: relative;
+    top: -75px;
+    z-index: -1;
+}
+
+.negative-drink{
+    right: -20px;
+    bottom: -30px;
+}
