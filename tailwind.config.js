@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         'main': 'url(/img/bg-main.png)',
-        'paper': 'url(/img/bg-paper.png)'
+        'paper': 'url(/img/bg-paper.png)',
+        'text': 'url(/img/bg-text.png)'
       },
       colors:{
         'bluejays':'#0073B2',

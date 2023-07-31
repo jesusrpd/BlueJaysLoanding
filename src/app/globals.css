@@ -17,3 +17,8 @@
     right: -20px;
     bottom: -30px;
 }
+
+.bg-effect-text{
+    position: relative;
+    top: -90px;
+}

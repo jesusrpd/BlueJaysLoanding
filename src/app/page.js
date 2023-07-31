@@ -31,8 +31,10 @@ export default function Home() {
           <Image src="/img/drink.png" alt='img from team' width={76} height={101} className='absolute negative-drink'/>
         </div>
       </section>
-      <section>
-        
+      <section className='bg-text p-10 bg-effect-text bg-contain'>
+        <q className='text-white font-bold text-center mb-5'>Giving work to other families and working as a team, I find it fulfilling because I want to help them as others helped me grow.</q>
+        <p className='text-white font-bold text-center'>Hortensia founder of BlueJays</p>
+        <Image src="/img/drink2.png" alt='drink2' width={249} height={332} className='absolute'/>
       </section>
     </>
   )
