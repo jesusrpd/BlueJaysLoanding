@@ -1,3 +1,4 @@
+import Card from '@/components/Card'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -36,15 +37,12 @@ export default function Home() {
         <p className='text-white font-bold text-center'>Hortensia founder of BlueJays</p>
         <Image src="/img/drink2.png" alt='drink2' width={159} height={242} className='absolute negative-drink-2'/>
       </section>
-      <section className='w-full min-h-screen bg-paper bg-cover bg-paper-effect-2 pt-28 flex flex-col items-center px-4'>
+      <section className='w-full min-h-screen bg-paper bg-cover bg-paper-effect-2 pt-28 flex flex-col items-center px-4 pb-20'>
         <h2 className='text-bluejays font-bold text-2xl mb-5'>Activitie BlueJays</h2>
-        <div className='relative rounded-3xl w-48 h-72 bg-karaoke bg-contain bg-no-repeat flex items-end p-2'>
-          <div className='absolute w-full h-full bg-black opacity-5 rounded-3xl top-0 left-0'></div>
-          <div className='flex items-center'>
-            <Image src="img/cards/icons/karaoke.svg" alt="karaoke BlueJay's" width={35} height={35}/>
-            <h3 className='text-white font-bold ml-2 text-2xl'>Karaoke</h3>
-          </div>
-        </div>
+        <Card icon="karaoke" title="Karaoke"/>
+        <Card icon="restaurant" title="Restaurant"/>
+        <Card icon="bar" title="Bar"/>
+        <Image src="/img/food/sope.png" alt='sope saucer' width={223} height={103} className='absolute negative-sope'/>
       </section>
     </>
   )

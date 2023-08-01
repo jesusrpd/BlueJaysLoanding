@@ -11,7 +11,9 @@ module.exports = {
         'main': 'url(/img/bg-main.png)',
         'paper': 'url(/img/bg-paper.png)',
         'text': 'url(/img/bg-text.png)',
-        'karaoke': 'url(/img/cards/karaoke.png)'
+        'karaoke': 'url(/img/cards/karaoke.png)',
+        'restaurant': 'url(/img/cards/restaurant.png)',
+        'bar': 'url(/img/cards/bar.png)'
       },
       colors:{
         'bluejays':'#0073B2',
