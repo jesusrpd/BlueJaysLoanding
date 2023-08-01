@@ -13,6 +13,12 @@
     z-index: -1;
 }
 
+.bg-paper-effect-2{
+    position: relative;
+    top: -145px;
+    z-index: -1;
+}
+
 .negative-drink{
     right: -20px;
     bottom: -30px;

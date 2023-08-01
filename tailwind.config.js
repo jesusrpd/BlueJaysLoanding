@@ -10,7 +10,8 @@ module.exports = {
       backgroundImage: {
         'main': 'url(/img/bg-main.png)',
         'paper': 'url(/img/bg-paper.png)',
-        'text': 'url(/img/bg-text.png)'
+        'text': 'url(/img/bg-text.png)',
+        'karaoke': 'url(/img/cards/karaoke.png)'
       },
       colors:{
         'bluejays':'#0073B2',
