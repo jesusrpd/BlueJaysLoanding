@@ -31,10 +31,10 @@ export default function Home() {
           <Image src="/img/drink.png" alt='img from team' width={76} height={101} className='absolute negative-drink'/>
         </div>
       </section>
-      <section className='bg-text p-10 bg-effect-text bg-contain'>
-        <q className='text-white font-bold text-center mb-5'>Giving work to other families and working as a team, I find it fulfilling because I want to help them as others helped me grow.</q>
+      <section className='bg-text px-10 py-20 bg-effect-text bg-contain relative h-96 flex flex-col items-center justify-start'>
+        <p className='text-white font-bold text-center leading-9 mb-10'>"Giving work to other families and working as a team, I find it fulfilling because I want to help them as others helped me grow."</p>
         <p className='text-white font-bold text-center'>Hortensia founder of BlueJays</p>
-        <Image src="/img/drink2.png" alt='drink2' width={249} height={332} className='absolute'/>
+        <Image src="/img/drink2.png" alt='drink2' width={159} height={242} className='absolute negative-drink-2'/>
       </section>
     </>
   )
