@@ -1,3 +1,5 @@
+"use client"
+
 import Card from '@/components/Card'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -33,7 +35,7 @@ export default function Home() {
         </div>
       </section>
       <section className='bg-text px-10 py-20 bg-effect-text bg-contain relative h-96 flex flex-col items-center justify-start'>
-        <p className='text-white font-bold text-center leading-9 mb-10'>"Giving work to other families and working as a team, I find it fulfilling because I want to help them as others helped me grow."</p>
+        <p className='text-white font-bold text-center leading-9 mb-10'>Giving work to other families and working as a team, I find it fulfilling because I want to help them as others helped me grow.</p>
         <p className='text-white font-bold text-center'>Hortensia founder of BlueJays</p>
         <Image src="/img/drink2.png" alt='drink2' width={159} height={242} className='absolute negative-drink-2'/>
       </section>
@@ -44,6 +46,41 @@ export default function Home() {
         <Card icon="bar" title="Bar"/>
         <Image src="/img/food/sope.png" alt='sope saucer' width={223} height={103} className='absolute negative-sope'/>
       </section>
+      <section className='w-full min-h-screen bg-horary bg-contain pt-28 flex flex-col items-center px-4 pb-20 negative-horary relative justify-center'>
+        <figure class="icon-cards mt-3">
+          <div class="icon-cards__content">
+            <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1">🙂</span></div>
+            <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1">😊</span></div>
+            <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1">😀</span></div>
+          </div>
+        </figure>
+        <h3 className='text-white font-bold text-2xl my-10'>OPEN EVERYDAY!</h3>
+        <h3 className='text-white font-bold text-3xl'>Horary</h3>
+        <div className='mt-10 text-center'>
+          <p className='text-white font-bold text-2xl mb-2'>Monday to Friday</p>
+          <span className='text-white font-medium text-lg'>2:30pm to 2:30am</span>
+        </div>
+        <div className='mt-10 text-center'>
+          <p className='text-white font-bold text-2xl mb-2'>Saturday to Sunday</p>
+          <span className='text-white font-medium text-lg'>2:30pm to 2:30am</span>
+        </div>
+        <Image src="/img/food/pulpe.png"  alt='food pulpe' width={196} height={189} className='absolute right-0 negative-pulpe'/>
+      </section>
+      <section className='w-full min-h-screen bg-paper bg-cover pt-28 flex flex-col items-center pb-24 negative-location px-10'>
+        <h2 className='text-bluejays font-bold text-2xl mb-5 relative'>Location BlueJays</h2>
+        <p className='text-base text-center leading-9 font-bold mb-5'>We are located at: <span className='text-yellowjays underline'>446 SW Baseline St Hillsboro, OR 97123 EE. UU.</span></p>
+        <p className='text-base text-center leading-9 font-bold'>Take your family to the restaurant or enjoy a nice evening with your friends in our bar section. We look forward to seeing you soon!</p>
+        <dv>
+          <Image src="/img/location/restaurant.png" alt='restaurant Bluejays' width={200} height={120}/>
+          <Image src="/img/location/bar.png" alt='bar Bluejays' width={200} height={120}/>
+          <Image src="/img/location/karaoke.png" alt='karaoke Bluejays' width={200} height={120}/>
+        </dv>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.509550669264!2d-122.99790952324128!3d45.51995072971649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54951a97f420e69f%3A0xba893c2926ab0b60!2s446%20SW%20Baseline%20St%2C%20Hillsboro%2C%20OR%2097123%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1691003797680!5m2!1ses-419!2smx" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-11/12 h-72 rounded-3xl mt-16 shadow-card'></iframe>
+        <Image src="/img/food/carrots.png" alt='carrots Bluejays' width={176} height={72} className='absolute left-0 negative-carrots'/>
+      </section>
+      <footer className='w-full min-h-screen bg-footer bg-cover relative negativer-footer'>
+        {/* <Image src="/img/logotipo.png" alt='logotipo BlueJays' width={150} height={105}/> */}
+      </footer>
     </>
   )
 }

@@ -38,3 +38,26 @@
     bottom: -120px;
     left: 0;
 }
+
+.negative-horary{
+    top: -185px;
+    z-index: -2;
+}
+
+.negative-pulpe{
+    bottom: -100px;
+}
+
+.negative-location{
+    top: -220px;
+    z-index: -10;
+    position: relative;
+}
+
+.negative-carrots{
+    bottom: -50px;
+}
+
+.negativer-footer{
+    top: -400px;
+}
