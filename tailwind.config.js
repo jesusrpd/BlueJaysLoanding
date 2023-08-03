@@ -19,7 +19,8 @@ module.exports = {
       },
       colors:{
         'bluejays':'#0073B2',
-        'yellowjays': '#E8A800'
+        'yellowjays': '#E8A800',
+        'grayjays': '#E1E3E8'
       },
       boxShadow: {
         'card': '4px 6px 10px 0px rgba(0, 0, 0, 0.55);'

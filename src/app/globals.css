@@ -7,30 +7,13 @@
     bottom: -150px;
 }
 
-.bg-paper-effect{
-    position: relative;
-    top: -75px;
-    z-index: -1;
-}
-
-.bg-paper-effect-2{
-    position: relative;
-    top: -145px;
-    z-index: -1;
-}
-
 .negative-drink{
     right: -20px;
     bottom: -30px;
 }
 
-.bg-effect-text{
-    position: relative;
-    top: -90px;
-}
-
 .negative-drink-2{
-    right: -50px;
+    right: 0px;
     bottom: -50px;
 }
 
@@ -39,19 +22,8 @@
     left: 0;
 }
 
-.negative-horary{
-    top: -185px;
-    z-index: -2;
-}
-
 .negative-pulpe{
     bottom: -100px;
-}
-
-.negative-location{
-    top: -220px;
-    z-index: -10;
-    position: relative;
 }
 
 .negative-carrots{
@@ -59,5 +31,5 @@
 }
 
 .negativer-footer{
-    top: -400px;
+    top: -200px;
 }
