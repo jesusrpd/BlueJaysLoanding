@@ -60,7 +60,7 @@ export default function Home() {
         </div>
         <div className='mt-10 text-center'>
           <p className='text-white font-bold text-2xl mb-2'>Saturday to Sunday</p>
-          <span className='text-white font-medium text-lg'>2:30pm to 2:30am</span>
+          <span className='text-white font-medium text-lg'>8:00am to 2:30am</span>
         </div>
         <Image src="/img/food/pulpe.png"  alt='food pulpe' width={196} height={189} className='absolute right-0 negative-pulpe z-10'/>
       </section>
