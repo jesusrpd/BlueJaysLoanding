@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 .negative-position{
-    left: -20px;
-    bottom: -150px;
+    left: -60px;
+    bottom: -90px;
 }
 
 .bg-paper-effect{
