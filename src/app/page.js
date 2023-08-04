@@ -21,7 +21,7 @@ export default function Home() {
         </div>
         <Image src="/img/food/aritos.png" alt='img of food aritos' width={294.7} height={314.22} className='absolute bottom-0 negative-position'/>
       </main>
-      <section className='w-screen min-h-screen bg-paper bg-cover pt-28 flex flex-col items-center px-4 pb-20'>
+      <section className='w-screen min-h-screen bg-paper bg-cover pt-11 flex flex-col items-center px-4 pb-20'>
         <h2 className='text-bluejays font-bold text-2xl mb-5'>About BlueJays</h2>
         <div className='mb-20'>
           <p className='mb-10 leading-9 text-center font-bold'>In September 2014 I opened <span className='text-bluejays'>BlueJays</span>, a restaurant that was named after the many birds called Blue Jay, thats where the name of this restaurant comes from.</p>
@@ -53,7 +53,7 @@ export default function Home() {
           </div>
         </figure>
         <h3 className='text-white font-bold text-2xl my-10'>OPEN EVERYDAY!</h3>
-        <h3 className='text-white font-bold text-3xl'>Horary</h3>
+        <h3 className='text-white font-bold text-3xl'>Horary</h3> 
         <div className='mt-10 text-center'>
           <p className='text-white font-bold text-2xl mb-2'>Monday to Friday</p>
           <span className='text-white font-medium text-lg'>2:30pm to 2:30am</span>
@@ -74,7 +74,7 @@ export default function Home() {
           <Image src="/img/location/karaoke.png" alt='karaoke Bluejays' width={200} height={120}/>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.509550669264!2d-122.99790952324128!3d45.51995072971649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54951a97f420e69f%3A0xba893c2926ab0b60!2s446%20SW%20Baseline%20St%2C%20Hillsboro%2C%20OR%2097123%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1691003797680!5m2!1ses-419!2smx" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-11/12 h-72 rounded-3xl mt-16 shadow-card'></iframe>
-        <Image src="/img/food/carrots.png" alt='carrots Bluejays' width={176} height={72} className='absolute left-0 negative-carrots'/>
+        <Image src="/img/food/carrots.png" alt='carrots Bluejays' width={176} height={72} className='absolute left-0 negative-carrots z-10'/>
       </section>
       <footer className='w-full min-h-screen bg-footer bg-cover relative bg-grayjays flex flex-col justify-center items-center'>
         <Image src="/logotipo.svg" alt='logotipo BlueJays' width={120} height={85}/>
@@ -89,14 +89,14 @@ export default function Home() {
           <li className='my-5'>Social networks:</li>
         </ul>
         <div className='mt-2 flex'>
-          <div className='flex flex-col items-center mr-5'>
+          <Link className='flex flex-col items-center mr-5' href="https://www.instagram.com/blue.jays.bar/" target='_blank'>
             <Image src="/instagram.svg" alt="instagram BlueJay's" width={30} height={30}/>
             <p className='text-white text-base font-bold text-center mt-2'>Instagram</p>
-          </div>
-          <div className='flex flex-col items-center'>
+            </Link>       
+          <Link className='flex flex-col items-center'  href="https://www.facebook.com/blue.jays.bar/" target='_blank'>
             <Image src="/facebook.svg" alt="facebook BlueJay's" width={30} height={30}/>
             <p className='text-white text-base font-bold text-center mt-2'>Facebook</p>
-          </div>
+            </Link>
         </div>
       </footer>
     </>
