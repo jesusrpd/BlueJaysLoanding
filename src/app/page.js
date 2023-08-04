@@ -5,14 +5,22 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <>
-      <main className='w-full h-screen bg-main bg-cover flex items-center relative bg-grayjays'>
+      <main className='w-full h-screen bg-main md:bg-main-tablet bg-cover md:bg-no-repeat flex items-center relative bg-grayjays'>
         <nav className='flex w-full justify-between px-4 pt-4 absolute top-0 left-0'>
           <Image src="/img/logotipo.png" alt="logotipo Buejay's" width={59} height={60}/>
-          <div className='nav-lines-container cursor-pointer h-fit'>
+          <div className='nav-lines-container cursor-pointer h-fit md:hidden'>
             <div className='w-8 h-1 bg-white rounded-2xl my-2'></div>
             <div className='w-8 h-1 bg-white rounded-2xl my-2'></div>
             <div className='w-8 h-1 bg-white rounded-2xl my-2'></div>
           </div>
+          <ul className='flex'>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </nav>
         <div className='w-full flex flex-col items-center'>
           <h1 className='text-white font-extrabold text-3xl my-2'>BLUE JAYS</h1>
@@ -68,12 +76,12 @@ export default function Home() {
         <h2 className='text-bluejays font-bold text-2xl mb-5 relative'>Location BlueJays</h2>
         <p className='text-base text-center leading-9 font-bold mb-5'>We are located at: <Link className='text-yellowjays underline' href='https://goo.gl/maps/pxBEU7Aznj5vUGBK9' target='_blank'>446 SW Baseline St Hillsboro, OR 97123 EE. UU.</Link> </p>
         <p className='text-base text-center leading-9 font-bold'>Take your family to the restaurant or enjoy a nice evening with your friends in our bar section. We look forward to seeing you soon!</p>
-        <div>
+        <div className='md:flex md:mt-10'>
           <Image src="/img/location/restaurant.png" alt='restaurant Bluejays' width={200} height={120}/>
           <Image src="/img/location/bar.png" alt='bar Bluejays' width={200} height={120}/>
           <Image src="/img/location/karaoke.png" alt='karaoke Bluejays' width={200} height={120}/>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.509550669264!2d-122.99790952324128!3d45.51995072971649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54951a97f420e69f%3A0xba893c2926ab0b60!2s446%20SW%20Baseline%20St%2C%20Hillsboro%2C%20OR%2097123%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1691003797680!5m2!1ses-419!2smx" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-11/12 h-72 rounded-3xl mt-16 shadow-card'></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.509550669264!2d-122.99790952324128!3d45.51995072971649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54951a97f420e69f%3A0xba893c2926ab0b60!2s446%20SW%20Baseline%20St%2C%20Hillsboro%2C%20OR%2097123%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1691003797680!5m2!1ses-419!2smx" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='w-11/12 h-72 rounded-3xl mt-16 shadow-card'></iframe>
         <Image src="/img/food/carrots.png" alt='carrots Bluejays' width={176} height={72} className='absolute left-0 negative-carrots'/>
       </section>
       <footer className='w-full min-h-screen bg-footer bg-cover relative bg-grayjays flex flex-col justify-center items-center'>
