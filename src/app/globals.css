@@ -14,7 +14,7 @@
 
 .negative-drink-2{
     right: 0px;
-    bottom: -50px;
+    bottom: -200px;
 }
 
 .negative-sope{
@@ -32,4 +32,9 @@
 
 .negativer-footer{
     top: -200px;
+}
+
+.img-menu{
+    width: 100%;
+    height: 100vh;
 }
