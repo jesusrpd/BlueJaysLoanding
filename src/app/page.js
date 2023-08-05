@@ -74,11 +74,7 @@ export default function Home() {
           <Image src="/img/location/karaoke.png" alt='karaoke Bluejays' width={200} height={120}/>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.509550669264!2d-122.99790952324128!3d45.51995072971649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54951a97f420e69f%3A0xba893c2926ab0b60!2s446%20SW%20Baseline%20St%2C%20Hillsboro%2C%20OR%2097123%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1691003797680!5m2!1ses-419!2smx" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='w-11/12 h-72 rounded-3xl mt-16 shadow-card'></iframe>
-<<<<<<< HEAD
-        <Image src="/img/food/carrots.png" alt='carrots Bluejays' width={176} height={72} className='absolute left-0 negative-carrots'/>
-=======
         <Image src="/img/food/carrots.png" alt='carrots Bluejays' width={176} height={72} className='absolute left-0 negative-carrots z-10'/>
->>>>>>> 22cd93696a972e315b8f654211b70f24155b9121
       </section>
       <footer className='w-full min-h-screen bg-footer bg-cover relative bg-grayjays flex flex-col justify-center items-center'>
         <Image src="/logotipo.svg" alt='logotipo BlueJays' width={120} height={85}/>
