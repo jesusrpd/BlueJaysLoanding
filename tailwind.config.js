@@ -25,6 +25,12 @@ module.exports = {
       },
       boxShadow: {
         'card': '4px 6px 10px 0px rgba(0, 0, 0, 0.55);'
+      },
+      width: {
+        '100': '482px'
+      },
+      height: {
+        '100': '514px'
       }
     },
   },

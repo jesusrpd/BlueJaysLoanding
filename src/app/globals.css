@@ -45,7 +45,16 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
     .negative-drink{
+        right: -30px;
+        bottom: -260px;
+    }
+    .negative-margin-text{
+        margin-top: -20;
+    }
+    .negative-position{
         bottom: -250px;
     }
-    
+    .negative-carrots{
+        bottom: -150px;
+    }
 }
