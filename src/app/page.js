@@ -1,6 +1,9 @@
 import Card from '@/components/Card'
 import Image from 'next/image'
 import Link from 'next/link'
+import imagen3_carusel from '../../public/img/cards/restaurant.png'
+import imagen2_carusel from "../../public/img/cards/karaoke.png"
+import imagen1_carusel from "../../public/img/cards/bar.png"
 import TeamImg from '../../public/img/team.png'
 import DrinkImg from '../../public/img/drink.png'
 import AritosImg from '../../public/img/food/aritos.png'
@@ -59,15 +62,21 @@ export default function Home() {
         <Image src="/img/food/sope.png" alt='sope saucer' width={223} height={103} className='absolute negative-sope z-10'/>
       </section>
       <section className='w-full min-h-screen bg-horary bg-contain pt-28 flex flex-col items-center px-4 pb-20 relative justify-center bg-grayjays'>
-        <figure className="icon-cards mt-3">
-          <div className="icon-cards__content">
-            <div className="icon-cards__item d-flex align-items-center justify-content-center"><span className="h1">🙂</span></div>
-            <div className="icon-cards__item d-flex align-items-center justify-content-center"><span className="h1">😊</span></div>
-            <div className="icon-cards__item d-flex align-items-center justify-content-center"><span className="h1">😀</span></div>
-          </div>
-        </figure>
-        <h3 className='text-white font-bold text-2xl my-10 md:text-3xl'>OPEN EVERYDAY!</h3>
-        <h3 className='text-white font-bold text-3xl md:text-3xl'>Horary</h3> 
+      <div className="slider-wrapper">
+        <div className="slider">
+            <Image id="slide-1" src={imagen1_carusel} alt="imagenes del espacio"/>
+            <Image id="slide-2" src={imagen2_carusel} alt="imagenes del espacio"/>
+            <Image id="slide-3" src={imagen3_carusel} alt="imagenes del espacio"/>
+        </div>
+        <div className="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+        </div>
+      </div>
+
+        <h3 className='text-white font-bold text-2xl my-10'>OPEN EVERYDAY!</h3>
+        <h3 className='text-white font-bold text-3xl'>Horary</h3> 
         <div className='mt-10 text-center'>
           <p className='text-white font-bold text-2xl mb-2 md:text-2xl'>Monday to Friday</p>
           <span className='text-white font-medium text-lg md:text-lg'>2:30pm to 2:30am</span>
