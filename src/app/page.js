@@ -62,13 +62,13 @@ export default function Home() {
         <Image src="/img/food/sope.png" alt='sope saucer' width={223} height={103} className='absolute negative-sope z-10'/>
       </section>
       <section className='w-full min-h-screen bg-horary bg-contain pt-28 flex flex-col items-center px-4 pb-20 relative justify-center bg-grayjays'>
-      <div className="slider-wrapper">
-        <div className="slider">
-            <Image id="slide-1" src={imagen1_carusel} alt="imagenes del espacio"/>
-            <Image id="slide-2" src={imagen2_carusel} alt="imagenes del espacio"/>
-            <Image id="slide-3" src={imagen3_carusel} alt="imagenes del espacio"/>
+      <div className="slider-wrapper ">
+        <div className="slider ">
+            <Image  className="shadow-card" id="slide-1 " src={imagen1_carusel} alt="imagenes del espacio"/>
+            <Image  className="shadow-card" id="slide-2" src={imagen2_carusel} alt="imagenes del espacio"/>
+            <Image  className="shadow-card" id="slide-3" src={imagen3_carusel} alt="imagenes del espacio"/>
         </div>
-        <div className="slider-nav">
+        <div className="slider-nav ">
             <a href="#slide-1"></a>
             <a href="#slide-2"></a>
             <a href="#slide-3"></a>
