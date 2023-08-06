@@ -1,8 +1,8 @@
 import Image from 'next/image'
 
-export default function Card({icon, title}){
+export default function Card({icon, title,img_bg}){
     return(
-        <div className={`relative rounded-3xl w-48 h-72 bg-${icon} bg-cover bg-no-repeat flex items-end p-2 my-5`}>
+        <div className={`relative rounded-3xl w-48 h-72 ${img_bg} bg-cover bg-no-repeat flex items-end p-2 my-5 shadow-card`}>
           <div className='flex items-center '>
             <Image src={`img/cards/icons/${icon}.svg`} alt={`${title} BlueJay's`} width={35} height={35}/>
             <h3 className='text-white font-bold ml-2 text-2xl'>{title}</h3>
@@ -11,3 +11,7 @@ export default function Card({icon, title}){
         </div>
     )
 }
+
+{/* <div className={'image-container'}>
+  <Image src={path} layout="fill" className={'image'} />
+</div> */}

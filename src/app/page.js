@@ -1,6 +1,7 @@
 import Card from '@/components/Card'
 import Image from 'next/image'
 import Link from 'next/link'
+import TeamImg from '../../public/img/team.png'
 
 export default function Home() {
   return (
@@ -30,13 +31,13 @@ export default function Home() {
         <Image src="/img/food/aritos.png" alt='img of food aritos' width={294.7} height={314.22} className='absolute bottom-0 negative-position'/>
       </main>
       <section className='w-screen min-h-screen bg-paper bg-cover pt-11 flex flex-col items-center px-4 pb-20'>
-        <h2 className='text-bluejays font-bold text-2xl mb-5'>About BlueJays</h2>
-        <div className='mb-20'>
+        <h2 className='text-bluejays font-bold text-2xl mb-5 md:mt-20'>About BlueJays</h2>
+        <div className='mb-20 md:w-3/4'>
           <p className='mb-10 leading-9 text-center font-bold'>In September 2014 I opened <span className='text-bluejays'>BlueJays</span>, a restaurant that was named after the many birds called Blue Jay, thats where the name of this restaurant comes from.</p>
           <p className='leading-9 text-center font-bold'>Later in 2019 we changed our location to <span className='text-yellowjays'>Hillsboro Oregon</span> but kept the same name BlueJays. Since then we decided to expand and offer both bar and restaurant service since that is what we enjoy doing so much at <span className='text-bluejays'>BlueJays</span>.</p>
         </div>
-        <div className='relative'>
-          <Image src="/img/team.png" alt='img from team' width={279} height={189}/>
+        <div className='relative w-64 h-44 md:w-4/5'>
+          <Image src={TeamImg} alt='img from team' className='w-full'/>
           <Image src="/img/drink.png" alt='img from team' width={76} height={101} className='absolute negative-drink'/>
         </div>
       </section>
@@ -47,9 +48,9 @@ export default function Home() {
       </section>
       <section className='w-full min-h-screen bg-paper bg-cover pt-28 flex flex-col items-center px-4 pb-20 relative'>
         <h2 className='text-bluejays font-bold text-2xl mb-5'>Activitie BlueJays</h2>
-        <Card icon="karaoke" title="Karaoke"/>
-        <Card icon="restaurant" title="Restaurant"/>
-        <Card icon="bar" title="Bar"/>
+        <Card icon="karaoke" title="Karaoke" img_bg="bg-karaoke"/>
+        <Card icon="restaurant" title="Restaurant" img_bg="bg-restaurant"/>
+        <Card icon="bar" title="Bar" img_bg="bg-bar"/>
         <Image src="/img/food/sope.png" alt='sope saucer' width={223} height={103} className='absolute negative-sope z-10'/>
       </section>
       <section className='w-full min-h-screen bg-horary bg-contain pt-28 flex flex-col items-center px-4 pb-20 relative justify-center bg-grayjays'>
