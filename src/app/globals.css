@@ -43,6 +43,40 @@
     height: 100px;
 }
 
+#btn-menu {
+    --color: #E8A800;
+    position: relative;
+    overflow: hidden;
+    transition: color .5s;
+    z-index: 1;
+    color: var(--color);
+}
+   
+#btn-menu:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 250px;
+    border-radius: 50%;
+}
+   
+#btn-menu:hover {
+    color: #fff;
+}
+   
+#btn-menu:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+   
+#btn-menu:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
     .negative-drink{
         right: -30px;
