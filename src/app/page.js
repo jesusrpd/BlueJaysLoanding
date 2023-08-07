@@ -37,11 +37,13 @@ export default function Home() {
         </div>
         <Image src={AritosImg} alt='img of food aritos' className='absolute bottom-0 negative-position w-72 h-96 md:w-100 md:h-100'/>
       </main>
-      <section className='w-screen min-h-screen bg-paper bg-cover pt-11 flex flex-col items-center px-4 pb-20'>
-        <h2 className='text-bluejays font-bold text-2xl mb-5 md:mt-28 md:text-3xl'>About BlueJays</h2>
-        <div className='mb-20 md:w-3/4'>
-          <p className='mb-10 leading-9 text-center font-bold md:text-lg'>In September 2014 I opened <span className='text-bluejays md:text-lg'>BlueJays</span>, a restaurant that was named after the many birds called Blue Jay, thats where the name of this restaurant comes from.</p>
-          <p className='leading-9 text-center font-bold md:text-lg'>Later in 2019 we changed our location to <span className='text-yellowjays md:text-lg'>Hillsboro Oregon</span> but kept the same name BlueJays. Since then we decided to expand and offer both bar and restaurant service since that is what we enjoy doing so much at <span className='text-bluejays md:text-lg'>BlueJays</span>.</p>
+      <section className='w-screen min-h-screen bg-paper bg-cover pt-11 flex flex-col items-center px-4 pb-20 lg:flex-row'>
+        <div className='md:flex md:flex-col md:items-center'>
+          <h2 className='text-bluejays font-bold text-2xl mb-5 md:mt-28 md:text-3xl'>About BlueJays</h2>
+          <div className='mb-20 md:w-3/4'>
+            <p className='mb-10 leading-9 text-center font-bold md:text-lg lg:text-left'>In September 2014 I opened <span className='text-bluejays md:text-lg'>BlueJays</span>, a restaurant that was named after the many birds called Blue Jay, thats where the name of this restaurant comes from.</p>
+            <p className='leading-9 text-center font-bold md:text-lg lg:text-left'>Later in 2019 we changed our location to <span className='text-yellowjays md:text-lg'>Hillsboro Oregon</span> but kept the same name BlueJays. Since then we decided to expand and offer both bar and restaurant service since that is what we enjoy doing so much at <span className='text-bluejays md:text-lg'>BlueJays</span>.</p>
+          </div>
         </div>
         <div className='relative w-64 h-44 md:w-4/5'>
           <Image src={TeamImg} alt='img from team' className='w-full'/>
