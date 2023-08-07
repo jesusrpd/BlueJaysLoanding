@@ -8,6 +8,7 @@ import TeamImg from '../../public/img/team.png'
 import DrinkImg from '../../public/img/drink.png'
 import AritosImg from '../../public/img/food/aritos.png'
 import CarrotsImg from '../../public/img/food/carrots.png'
+import LogotipoIcon from '../../public/logotipo.svg'
 
 export default function Home() {
   return (
@@ -62,7 +63,7 @@ export default function Home() {
         <Image src="/img/food/sope.png" alt='sope saucer' width={223} height={103} className='absolute negative-sope z-10'/>
       </section>
       <section className='w-full min-h-screen bg-horary bg-contain pt-28 flex flex-col items-center px-4 pb-20 relative justify-center bg-grayjays'>
-      <div className="slider-wrapper ">
+      <div className="slider-wrapper md:w-3/5 md:mb-10">
         <div className="slider ">
             <Image  className="shadow-card" id="slide-1 " src={imagen1_carusel} alt="imagenes del espacio"/>
             <Image  className="shadow-card" id="slide-2" src={imagen2_carusel} alt="imagenes del espacio"/>
@@ -100,9 +101,9 @@ export default function Home() {
         <Image src={CarrotsImg} alt='carrots Bluejays' className='absolute left-0 negative-carrots z-10 w-44 h-36 md:w-96 md:h-80'/>
       </section>
       <footer className='w-full min-h-screen bg-footer bg-cover relative bg-grayjays flex flex-col justify-center items-center'>
-        <Image src="/logotipo.svg" alt='logotipo BlueJays' width={120} height={85}/>
+        <Image src={LogotipoIcon} alt='logotipo BlueJays' className='w-32 h-24 md:w-64 md:h-64 md:mb-10'/>
         <p className='text-white text-center leading-9 font-bold mt-5 mx-10 text-lg'>Giving work to other families and working as a team, I find it fulfilling because I want to help them as others helped me grow.</p>
-        <ul className='font-bold text-lg text-white mt-5 list-disc'>
+        <ul className='font-bold text-lg text-white mt-5 list-disc md:hidden'>
           <li className='my-5'>All rights reserved by the author.</li>
           <li className='my-5'>bluejaysbar@gmail.com</li>
           <li className='my-5'>Location in Maps.</li>
@@ -111,7 +112,7 @@ export default function Home() {
           <li className='my-5'>About BlueJay’s</li>
           <li className='my-5'>Social networks:</li>
         </ul>
-        <div className='mt-2 flex'>
+        <div className='mt-2 flex md:hidden'>
           <Link className='flex flex-col items-center mr-5' href="https://www.instagram.com/blue.jays.bar/" target='_blank'>
             <Image src="/instagram.svg" alt="instagram BlueJay's" width={30} height={30}/>
             <p className='text-white text-base font-bold text-center mt-2'>Instagram</p>
@@ -120,6 +121,31 @@ export default function Home() {
             <Image src="/facebook.svg" alt="facebook BlueJay's" width={30} height={30}/>
             <p className='text-white text-base font-bold text-center mt-2'>Facebook</p>
             </Link>
+        </div>
+        <div className='font-bold text-lg text-white mt-10 hidden md:flex'>
+          <ul className='list-disc mr-24'>
+            <li className='my-5'>All rights reserved by the author.</li>
+            <li className='my-5'>bluejaysbar@gmail.com</li>
+            <li className='my-5'>Location in Maps.</li>
+            <li className='my-5'>Menú</li>
+          </ul>
+          <div>
+            <ul className='list-disc'>
+              <li className='my-5'>Horary</li>
+              <li className='my-5'>About BlueJay’s</li>
+              <li className='my-5'>Social networks:</li>
+            </ul>
+            <div className='mt-2 flex'>
+              <Link className='flex flex-col items-center mr-5' href="https://www.instagram.com/blue.jays.bar/" target='_blank'>
+                <Image src="/instagram.svg" alt="instagram BlueJay's" width={30} height={30}/>
+                <p className='text-white text-base font-bold text-center mt-2'>Instagram</p>
+                </Link>       
+              <Link className='flex flex-col items-center'  href="https://www.facebook.com/blue.jays.bar/" target='_blank'>
+                <Image src="/facebook.svg" alt="facebook BlueJay's" width={30} height={30}/>
+                <p className='text-white text-base font-bold text-center mt-2'>Facebook</p>
+                </Link>
+            </div>
+          </div>
         </div>
       </footer>
     </>
