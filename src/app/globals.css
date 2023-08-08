@@ -132,7 +132,7 @@ html, body{
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
     .negative-drink{
         right: -30px;
-        bottom: -260px;
+        bottom: -10px;
     }
     .negative-margin-text{
         margin-top: -20;
@@ -148,5 +148,9 @@ html, body{
 @media only screen and (min-width: 1024px){
     .negative-position{
         bottom: -250px;
+    }
+    .negative-drink{
+        right: -30px;
+        bottom: -10px;
     }
 }
