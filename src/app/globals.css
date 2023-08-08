@@ -47,7 +47,6 @@ html, body{
 }
 .slider-wrapper{
     position: relative;
-    max-width: 48rem;
     margin: 0 auto ;
     box-shadow: 4px 6px 10px 0px rgba(0, 0, 0, 0.55);
     border-radius: 20px;

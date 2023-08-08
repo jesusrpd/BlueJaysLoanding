@@ -9,6 +9,8 @@ import DrinkImg from '../../public/img/drink.png'
 import AritosImg from '../../public/img/food/aritos.png'
 import CarrotsImg from '../../public/img/food/carrots.png'
 import LogotipoIcon from '../../public/logotipo.svg'
+import SopeImg from '../../public/img/food/sope.png'
+import Drink2Img from '../../public/img/drink-2.png'
 
 export default function Home() {
   return (
@@ -39,7 +41,7 @@ export default function Home() {
       </main>
       <section id='About BlueJays' className='w-screen min-h-screen bg-paper bg-cover pt-11 flex flex-col items-center px-4 pb-20 lg:flex-row'>
         <div className='md:flex md:flex-col md:items-center'>
-          <h2 className='text-bluejays font-bold text-2xl mb-5 md:mt-28 md:text-3xl'>About BlueJays</h2>
+          <h2 className='text-bluejays font-bold text-2xl mb-5 md:mt-28 md:text-3xl text-center'>About BlueJays</h2>
           <div className='mb-20 md:w-3/4'>
             <p className='mb-10 leading-9 text-center font-bold md:text-lg lg:text-left'>In September 2014 I opened <span className='text-bluejays md:text-lg'>BlueJays</span>, a restaurant that was named after the many birds called Blue Jay, thats where the name of this restaurant comes from.</p>
             <p className='leading-9 text-center font-bold md:text-lg lg:text-left'>Later in 2019 we changed our location to <span className='text-yellowjays md:text-lg'>Hillsboro Oregon</span> but kept the same name BlueJays. Since then we decided to expand and offer both bar and restaurant service since that is what we enjoy doing so much at <span className='text-bluejays md:text-lg'>BlueJays</span>.</p>
@@ -62,22 +64,27 @@ export default function Home() {
           <Card icon="restaurant" title="Restaurant" img_bg="bg-restaurant"/>
           <Card icon="bar" title="Bar" img_bg="bg-bar"/>
         </div>
-        <Image src="/img/food/sope.png" alt='sope saucer' width={223} height={103} className='absolute negative-sope z-10'/>
+        <Image src={SopeImg} alt='sope saucer' className='absolute negative-sope z-10 w-32 h-72'/>
       </section>
       <section id='horary'className='w-full min-h-screen bg-horary bg-contain pt-28 flex flex-col items-center px-4 pb-20 relative justify-center bg-grayjays'>
-        <div>
-      <div className="slider-wrapper md:w-3/5 md:mb-10">
-        <div className="slider ">
-            <Image  className="shadow-card" id="slide-1 " src={imagen1_carusel} alt="imagenes del espacio"/>
-            <Image  className="shadow-card" id="slide-2" src={imagen2_carusel} alt="imagenes del espacio"/>
-            <Image  className="shadow-card" id="slide-3" src={imagen3_carusel} alt="imagenes del espacio"/>
+        <div className='w-full'>
+          <div className="slider-wrapper md:w-9/12 md:mb-20 w-4/5">
+            <div className="slider ">
+                <Image  className="shadow-card" id="slide-1 " src={imagen1_carusel} alt="imagenes del espacio"/>
+                <Image  className="shadow-card" id="slide-2" src={imagen2_carusel} alt="imagenes del espacio"/>
+                <Image  className="shadow-card" id="slide-3" src={imagen3_carusel} alt="imagenes del espacio"/>
+            </div>
+            <div className="slider-nav ">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+          </div>
         </div>
 
           <h3 className='text-white font-bold text-2xl my-10 text-center'>OPEN EVERYDAY!</h3>
         </div>
-      </div>
-        <div className='lg:flex lg:flex-col lg:items-center'>
-          <h3 className='text-white font-bold text-3xl'>Horary</h3>
+        <div className='lg:flex lg:flex-col lg:items-center mt-5'>
+          <h3 className='text-white font-bold text-3xl text-center'>Horary</h3>
           <div className='mt-10 text-center'>
             <p className='text-white font-bold text-2xl mb-2 md:text-2xl'>Monday to Friday</p>
             <span className='text-white font-medium text-lg md:text-lg'>2:30pm to 2:30am</span>
