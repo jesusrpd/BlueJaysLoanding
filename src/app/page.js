@@ -13,7 +13,7 @@ import LogotipoIcon from '../../public/logotipo.svg'
 export default function Home() {
   return (
     <>
-      <main className='w-full h-screen bg-main md:bg-main-tablet lg:bg-main-desktop bg-cover md:bg-no-repeat flex items-center relative bg-grayjays'>
+      <main id='home' className='w-full h-screen bg-main md:bg-main-tablet lg:bg-main-desktop bg-cover md:bg-no-repeat flex items-center relative bg-grayjays'>
         <nav className='flex w-full justify-between items-center px-4 pt-4 absolute top-0 left-0'>
           <Image src="/img/logotipo.png" alt="logotipo Buejay's" width={59} height={60}/>
           <div className='nav-lines-container cursor-pointer h-fit md:hidden'>
@@ -22,12 +22,12 @@ export default function Home() {
             <div className='w-8 h-1 bg-white rounded-2xl my-2'></div>
           </div>
           <ul className='hidden md:flex'>
-            <li className='mx-3 text-white font-bold text-lg'>Home</li>
-            <li className='mx-3 text-white font-bold text-lg'>About BlueJays</li>
-            <li className='mx-3 text-white font-bold text-lg'>Menu</li>
-            <li className='mx-3 text-white font-bold text-lg'>Horary</li>
-            <li className='mx-3 text-white font-bold text-lg'>Activities</li>
-            <li className='mx-3 text-white font-bold text-lg'>Location</li>
+            <li className='mx-3 text-white font-bold text-lg'><Link href='#home'>Home</Link></li>
+            <li className='mx-3 text-white font-bold text-lg'> <Link href='#About BlueJays'>About BlueJays</Link></li>
+            <li className='mx-3 text-white font-bold text-lg'><Link href='/menu'>Menu</Link></li>
+            <li className='mx-3 text-white font-bold text-lg'> <Link href='#horary'> Horary </Link></li>
+            <li className='mx-3 text-white font-bold text-lg'><Link href='#activities'>Activities</Link></li>
+            <li className='mx-3 text-white font-bold text-lg'> <Link href='#Location'>Location </Link></li>
           </ul>
         </nav>
         <div className='w-full flex flex-col items-center'>
@@ -37,7 +37,7 @@ export default function Home() {
         </div>
         <Image src={AritosImg} alt='img of food aritos' className='absolute bottom-0 negative-position w-72 h-96 md:w-100 md:h-100'/>
       </main>
-      <section className='w-screen min-h-screen bg-paper bg-cover pt-11 flex flex-col items-center px-4 pb-20 lg:flex-row'>
+      <section id='About BlueJays' className='w-screen min-h-screen bg-paper bg-cover pt-11 flex flex-col items-center px-4 pb-20 lg:flex-row'>
         <div className='md:flex md:flex-col md:items-center'>
           <h2 className='text-bluejays font-bold text-2xl mb-5 md:mt-28 md:text-3xl'>About BlueJays</h2>
           <div className='mb-20 md:w-3/4'>
@@ -53,9 +53,9 @@ export default function Home() {
       <section className='bg-text bg-grayjays px-10 py-20 md:py-0 md:pt-10 bg-cover relative h-96 md:h-52 md:bg-contain flex flex-col items-center justify-start'>
         <p className='text-white font-bold text-center leading-9 mb-10 md:text-lg md:mb-5'>Giving work to other families and working as a team, I find it fulfilling because I want to help them as others helped me grow.</p>
         <p className='text-white font-bold text-center  md:text-lg '>Hortensia founder of BlueJays</p>
-        <Image src="/img/drink2.png" alt='drink2' width={159} height={242} className='absolute negative-drink-2 z-10'/>
+        <Image src="/img/drink-2.png" alt='drink2' width={159} height={242} className='absolute negative-drink-2 z-10'/>
       </section>
-      <section className='w-full min-h-screen bg-paper bg-cover pt-28 flex flex-col items-center px-4 pb-20 relative'>
+      <section id='activities' className='w-full min-h-screen bg-paper bg-cover pt-28 flex flex-col items-center px-4 pb-20 relative'>
         <h2 className='text-bluejays font-bold text-2xl mb-5 md:text-3xl'>Activitie BlueJays</h2>
         <div className='md:flex md:flex-wrap md:justify-center'>
           <Card icon="karaoke" title="Karaoke" img_bg="bg-karaoke"/>
@@ -64,7 +64,7 @@ export default function Home() {
         </div>
         <Image src="/img/food/sope.png" alt='sope saucer' width={223} height={103} className='absolute negative-sope z-10'/>
       </section>
-      <section className='w-full min-h-screen bg-horary bg-contain pt-28 flex flex-col items-center px-4 pb-20 relative justify-center bg-grayjays'>
+      <section id='horary'className='w-full min-h-screen bg-horary bg-contain pt-28 flex flex-col items-center px-4 pb-20 relative justify-center bg-grayjays'>
       <div className="slider-wrapper md:w-3/5 md:mb-10">
         <div className="slider ">
             <Image  className="shadow-card" id="slide-1 " src={imagen1_carusel} alt="imagenes del espacio"/>
@@ -90,7 +90,7 @@ export default function Home() {
         </div>
         <Image src="/img/food/pulpe.png"  alt='food pulpe' width={196} height={189} className='absolute right-0 negative-pulpe z-10'/>
       </section>
-      <section className='w-full min-h-screen bg-paper bg-cover pt-28 flex flex-col items-center pb-24 px-10 relative'>
+      <section id='Location' className='w-full min-h-screen bg-paper bg-cover pt-28 flex flex-col items-center pb-24 px-10 relative'>
         <h2 className='text-bluejays font-bold text-2xl mb-5 relative md:text-3xl'>Location BlueJays</h2>
         <p className='text-base text-center leading-9 font-bold mb-5 md:md:text-lg'>We are located at: <Link className='text-yellowjays underline md:md:text-lg' href='https://goo.gl/maps/pxBEU7Aznj5vUGBK9' target='_blank'>446 SW Baseline St Hillsboro, OR 97123 EE. UU.</Link> </p>
         <p className='text-base text-center leading-9 font-bold md:md:text-lg'>Take your family to the restaurant or enjoy a nice evening with your friends in our bar section. We look forward to seeing you soon!</p>
