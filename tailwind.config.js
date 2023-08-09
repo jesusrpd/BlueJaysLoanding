@@ -8,18 +8,18 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'main': 'url(/img/bg-main.png)',
-        'main-tablet': 'url(/img/bg-main-tablet.png)',
-        'main-desktop': 'url(/img/bg-main-desktop.png)',
-        'paper': 'url(/img/bg-paper.png)',
-        'text': 'url(/img/bg-text.png)',
-        'karaoke': 'url(/img/cards/karaoke.png)',
-        'restaurant': 'url(/img/cards/restaurant.png)',
-        'bar': 'url(/img/cards/bar.png)',
-        'horary': 'url(/img/bg-horary.png)',
-        'footer': 'url(/img/bg-footer.png)',
-        'footer-desktop': 'url(/img/bg-footer-desktop.png)',
-        'menu': 'url(/img/bg-menu.png)'
+        'main': 'url(/img/bg-main.webp)',
+        'main-tablet': 'url(/img/bg-main-tablet.webp)',
+        'main-desktop': 'url(/img/bg-main-desktop.webp)',
+        'paper': 'url(/img/bg-paper.webp)',
+        'text': 'url(/img/bg-text.webp)',
+        'karaoke': 'url(/img/cards/karaoke.webp)',
+        'restaurant': 'url(/img/cards/restaurant.webp)',
+        'bar': 'url(/img/cards/bar.webp)',
+        'horary': 'url(/img/bg-horary.webp)',
+        'footer': 'url(/img/bg-footer.webp)',
+        'footer-desktop': 'url(/img/bg-footer-desktop.webp)',
+        'menu': 'url(/img/bg-menu.webp)'
       },
       colors:{
         'bluejays':'#0073B2',
