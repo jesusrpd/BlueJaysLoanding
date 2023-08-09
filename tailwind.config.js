@@ -17,7 +17,8 @@ module.exports = {
         'restaurant': 'url(/img/cards/restaurant.png)',
         'bar': 'url(/img/cards/bar.png)',
         'horary': 'url(/img/bg-horary.png)',
-        'footer': 'url(/img/bg-footer.png)'
+        'footer': 'url(/img/bg-footer.png)',
+        'footer-desktop': 'url(/img/bg-footer-desktop.png)'
       },
       colors:{
         'bluejays':'#0073B2',

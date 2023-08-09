@@ -135,6 +135,10 @@ html, body{
         right: -30px;
         bottom: -10px;
     }
+    .negative-drink-2{
+        right: 0px;
+        bottom: -80px;
+    }
     .negative-margin-text{
         margin-top: -20;
     }
@@ -144,14 +148,30 @@ html, body{
     .negative-carrots{
         bottom: -150px;
     }
+    .negative-sope{
+        bottom: -150px;
+        left: 0;
+    }
 }
 
 @media only screen and (min-width: 1024px){
     .negative-position{
+        left: 93px;
         bottom: -250px;
     }
     .negative-drink{
         right: -30px;
         bottom: -10px;
+    }
+    .negative-drink-2{
+        right: 0px;
+        bottom: -100px;
+    }
+    .negative-sope{
+        bottom: -180px;
+        left: 0;
+    }
+    .negative-carrots{
+        bottom: -200px;
     }
 }

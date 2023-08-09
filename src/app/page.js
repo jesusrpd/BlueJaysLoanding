@@ -7,6 +7,7 @@ import imagen1_carusel from "../../public/img/cards/bar.png"
 import TeamImg from '../../public/img/team.png'
 import DrinkImg from '../../public/img/drink.png'
 import AritosImg from '../../public/img/food/aritos.png'
+import AritosDesktopImg from '../../public/img/food/aritos-desktop.png'
 import CarrotsImg from '../../public/img/food/carrots.png'
 import LogotipoIcon from '../../public/logotipo.svg'
 import SopeImg from '../../public/img/food/sope.png'
@@ -17,7 +18,7 @@ export default function Home() {
   return (
     <>
       <main id='home' className='w-full h-screen bg-main md:bg-main-tablet lg:bg-main-desktop bg-cover md:bg-no-repeat flex items-center relative bg-grayjays'>
-        <nav className='flex w-full justify-between items-center px-4 pt-4 absolute top-0 left-0'>
+        <nav className='flex w-full justify-between items-center px-4 pt-4 absolute top-0 left-0 lg:p-5'>
           <Image src="/img/logotipo.png" alt="logotipo Buejay's" width={59} height={60}/>
           <div className='nav-lines-container cursor-pointer h-fit md:hidden'>
             <div className='w-8 h-1 bg-white rounded-2xl my-2'></div>
@@ -38,10 +39,11 @@ export default function Home() {
           <h3 className='text-white font-extrabold text-sm my-2 md:my-5 md:text-2xl'>Bar & Restaurant Family</h3>
           <Link href="/menu" className='border-yellowjays border-2 px-12 py-2 text-yellowjays font-extrabold text-sm my-2 md:text-lg md:my-5' id='btn-menu'>See menu</Link>
         </div>
-        <Image src={AritosImg} alt='img of food aritos' className='absolute bottom-0 negative-position w-72 h-96 md:w-100 md:h-100'/>
+        <Image src={AritosImg} alt='img of food aritos' className='absolute bottom-0 negative-position w-72 h-96 md:w-100 md:h-100 lg:hidden'/>
+        <Image src={AritosDesktopImg} alt='img of food aritos' className='absolute bottom-0 negative-position w-72 h-96 md:w-100 md:h-100 hidden lg:inline-block'/>
       </main>
-      <section id='About BlueJays' className='w-screen min-h-screen bg-paper bg-cover pt-11 flex flex-col items-center px-4 pb-20 lg:flex-row'>
-        <div className='md:flex md:flex-col md:items-center'>
+      <section id='About BlueJays' className='w-screen min-h-screen bg-paper bg-cover pt-11 flex flex-col items-center px-4 pb-20 lg:flex-row lg:justify-center lg:pr-24'>
+        <div className='md:flex md:flex-col md:items-center lg:w-fit'>
           <h2 className='text-bluejays font-bold text-2xl mb-5 md:mt-28 md:text-3xl text-center'>About BlueJays</h2>
           <div className='mb-20 md:w-3/4'>
             <p className='mb-10 leading-9 text-center font-bold md:text-lg lg:text-left'>In September 2014 I opened <span className='text-bluejays md:text-lg'>BlueJays</span>, a restaurant that was named after the many birds called Blue Jay, thats where the name of this restaurant comes from.</p>
@@ -56,7 +58,7 @@ export default function Home() {
       <section className='bg-text bg-grayjays px-10 py-20 md:py-0 md:pt-10 bg-cover relative h-96 md:h-52 md:bg-contain flex flex-col items-center justify-start'>
         <p className='text-white font-bold text-center leading-9 mb-10 md:text-lg md:mb-5 lg:w-2/4'>Giving work to other families and working as a team, I find it fulfilling because I want to help them as others helped me grow.</p>
         <p className='text-white font-bold text-center  md:text-lg '>Hortensia founder of BlueJays</p>
-        <Image src={Drink2Img} alt='drink2' width={159} height={242} className='w-24 h-60 absolute negative-drink-2 z-10'/>
+        <Image src={Drink2Img} alt='drink2' className='w-24 h-60 absolute negative-drink-2 z-10 md:w-32 md:h-72'/>
       </section>
       <section id='activities' className='w-full min-h-screen bg-paper bg-cover pt-28 flex flex-col items-center px-4 pb-20 relative'>
         <h2 className='text-bluejays font-bold text-2xl mb-5 md:text-3xl'>Activitie BlueJays</h2>
@@ -65,11 +67,12 @@ export default function Home() {
           <Card icon="restaurant" title="Restaurant" img_bg="bg-restaurant"/>
           <Card icon="bar" title="Bar" img_bg="bg-bar"/>
         </div>
-        <Image src={SopeImg} alt='sope saucer' className='absolute negative-sope z-10 w-44 h-48'/>
+        <Image src={SopeImg} alt='sope saucer' className='absolute negative-sope z-10 w-44 h-48 md:w-72 md:h-72'/>
       </section>
-      <section id='horary'className='w-full min-h-screen bg-horary bg-contain pt-28 flex flex-col items-center px-4 pb-20 relative justify-center bg-grayjays'>
+      <section id='horary' className='w-full min-h-screen bg-horary bg-contain pt-28 flex flex-col items-center px-4 pb-20 relative justify-center bg-grayjays lg:flex-row lg:justify-evenly lg:items-center'>
+        <div className='w-full lg:w-1/2'>
         <div className='w-full'>
-          <div className="slider-wrapper md:w-9/12 md:mb-20 w-4/5">
+          <div className="slider-wrapper md:w-9/12 md:mb-20 w-4/5 lg:mb-5">
             <div className="slider ">
                 <Image  className="shadow-card" id="slide-1 " src={imagen1_carusel} alt="imagenes del espacio"/>
                 <Image  className="shadow-card" id="slide-2" src={imagen2_carusel} alt="imagenes del espacio"/>
@@ -82,9 +85,10 @@ export default function Home() {
           </div>
         </div>
 
-          <h3 className='text-white font-bold text-2xl my-10 text-center'>OPEN EVERYDAY!</h3>
+          <h3 className='text-white font-bold text-2xl my-10 text-center lg:mt-5'>OPEN EVERYDAY!</h3>
         </div>
-        <div className='lg:flex lg:flex-col lg:items-center mt-5'>
+        </div>
+        <div className='lg:flex lg:flex-col lg:items-center mt-5 lg:mt-0'>
           <h3 className='text-white font-bold text-3xl text-center'>Horary</h3>
           <div className='mt-10 text-center'>
             <p className='text-white font-bold text-2xl mb-2 md:text-2xl'>Monday to Friday</p>
@@ -95,66 +99,68 @@ export default function Home() {
             <span className='text-white font-medium text-lg md:text-lg'>8:00am to 2:30am</span>
           </div>
         </div>
-        <Image src={PulpeImg}  alt='food pulpe' className='absolute right-0 negative-pulpe z-10 w-36 h-44'/>
+        <Image src={PulpeImg}  alt='food pulpe' className='absolute right-0 negative-pulpe z-10 w-36 h-44 md:w-56 md:h-72'/>
       </section>
-      <section id='Location' className='w-full min-h-screen bg-paper bg-cover pt-28 flex flex-col items-center pb-24 px-10 relative'>
-      <div className='flex flex-col items-center lg:items-start lg:pl-28'>
+      <section id='Location' className='w-full min-h-screen bg-paper bg-cover pt-28 flex flex-col items-center pb-24 px-10 relative lg:flex-row lg:justify-evenly lg:items-center'>
+      <div className='flex flex-col items-center lg:items-start lg:pl-20'>
         <h2 className='text-bluejays font-bold text-2xl mb-5 relative md:text-3xl'>Location BlueJays</h2>
-        <p className='text-base text-center leading-9 font-bold mb-5 md:md:text-lg'>We are located at: <Link className='text-yellowjays underline md:md:text-lg' href='https://goo.gl/maps/pxBEU7Aznj5vUGBK9' target='_blank'>446 SW Baseline St Hillsboro, OR 97123 EE. UU.</Link> </p>
-        <p className='text-base text-center leading-9 font-bold md:md:text-lg'>Take your family to the restaurant or enjoy a nice evening with your friends in our bar section. We look forward to seeing you soon!</p>
+        <p className='text-base text-center leading-9 font-bold mb-5 md:text-lg lg:text-left lg:w-4/5'>We are located at: <Link className='text-yellowjays underline md:text-lg' href='https://goo.gl/maps/pxBEU7Aznj5vUGBK9' target='_blank'>446 SW Baseline St Hillsboro, OR 97123 EE. UU.</Link> </p>
+        <p className='text-base text-center leading-9 font-bold md:text-lg lg:text-left lg:w-4/5'>Take your family to the restaurant or enjoy a nice evening with your friends in our bar section. We look forward to seeing you soon!</p>
         <div className='md:flex md:mt-10'>
           <Image src="/img/location/restaurant.png" alt='restaurant Bluejays' width={200} height={120}/>
           <Image src="/img/location/bar.png" alt='bar Bluejays' width={200} height={120}/>
           <Image src="/img/location/karaoke.png" alt='karaoke Bluejays' width={200} height={120}/>
         </div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.509550669264!2d-122.99790952324128!3d45.51995072971649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54951a97f420e69f%3A0xba893c2926ab0b60!2s446%20SW%20Baseline%20St%2C%20Hillsboro%2C%20OR%2097123%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1691003797680!5m2!1ses-419!2smx" style={{border:0}} allowFullScreen="" loading="lazy" referrerFolicy="no-referrer-when-downgrade" className='w-11/12 h-72 rounded-3xl mt-16 shadow-card md:h-96 md:w-3/4 lg:w-2/4 lg:mr-28'></iframe>
-        <Image src={CarrotsImg} alt='carrots Bluejays' className='absolute left-0 negative-carrots z-10 w-44 h-36 md:w-96 md:h-80'/>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.509550669264!2d-122.99790952324128!3d45.51995072971649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54951a97f420e69f%3A0xba893c2926ab0b60!2s446%20SW%20Baseline%20St%2C%20Hillsboro%2C%20OR%2097123%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1691003797680!5m2!1ses-419!2smx" style={{border:0}} allowFullScreen="" loading="lazy" referrerFolicy="no-referrer-when-downgrade" className='w-11/12 h-72 rounded-3xl mt-16 shadow-card md:h-96 md:w-3/4 lg:w-1/2 lg:mt-0'></iframe>
+        <Image src={CarrotsImg} alt='carrots Bluejays' className='absolute left-0 negative-carrots z-10 w-44 h-36 md:w-96 md:h-80 lg:w-52 lg:h-44'/>
       </section>
-      <footer className='w-full min-h-screen bg-footer bg-cover relative bg-grayjays flex flex-col justify-center items-center'>
-        <Image src={LogotipoIcon} alt='logotipo BlueJays' className='w-32 h-24 md:w-64 md:h-64 md:mb-10'/>
-        <p className='text-white text-center leading-9 font-bold mt-5 mx-10 text-lg'>Giving work to other families and working as a team, I find it fulfilling because I want to help them as others helped me grow.</p>
-        <ul className='font-bold text-lg text-white mt-5 list-disc md:hidden'>
-          <li className='my-5'>All rights reserved by the author.</li>
-          <li className='my-5'>bluejaysbar@gmail.com</li>
-          <li className='my-5'>Location in Maps.</li>
-          <li className='my-5'>Menú</li>
-          <li className='my-5'>Horary</li>
-          <li className='my-5'>About BlueJay’s</li>
-          <li className='my-5'>Social networks:</li>
-        </ul>
-        <div className='mt-2 flex md:hidden'>
-          <Link className='flex flex-col items-center mr-5' href="https://www.instagram.com/blue.jays.bar/" target='_blank'>
-            <Image src="/instagram.svg" alt="instagram BlueJay's" width={30} height={30}/>
-            <p className='text-white text-base font-bold text-center mt-2'>Instagram</p>
-            </Link>       
-          <Link className='flex flex-col items-center'  href="https://www.facebook.com/blue.jays.bar/" target='_blank'>
-            <Image src="/facebook.svg" alt="facebook BlueJay's" width={30} height={30}/>
-            <p className='text-white text-base font-bold text-center mt-2'>Facebook</p>
-            </Link>
-        </div>
-        <div className='font-bold text-lg text-white mt-10 hidden md:flex'>
-          <ul className='list-disc mr-24'>
+      <footer className='w-full min-h-screen bg-footer lg:bg-footer-desktop bg-cover relative bg-grayjays flex flex-col justify-center items-center lg:flex-row lg:justify-evenly lg:items-center lg:pt-20'>
+        <Image src={LogotipoIcon} alt='logotipo BlueJays' className='w-32 h-24 md:w-64 md:h-64 md:mb-10 lg:w-52 lg:h-52'/>
+        <div className='lg:w-1/2 flex flex-col items-center'>
+          <p className='text-white text-center leading-9 font-bold mt-5 mx-10 text-lg lg:w-11/12'>Giving work to other families and working as a team, I find it fulfilling because I want to help them as others helped me grow.</p>
+          <ul className='font-bold text-lg text-white mt-5 list-disc md:hidden'>
             <li className='my-5'>All rights reserved by the author.</li>
             <li className='my-5'>bluejaysbar@gmail.com</li>
             <li className='my-5'>Location in Maps.</li>
             <li className='my-5'>Menú</li>
+            <li className='my-5'>Horary</li>
+            <li className='my-5'>About BlueJay’s</li>
+            <li className='my-5'>Social networks:</li>
           </ul>
-          <div>
-            <ul className='list-disc'>
-              <li className='my-5'>Horary</li>
-              <li className='my-5'>About BlueJay’s</li>
-              <li className='my-5'>Social networks:</li>
+          <div className='mt-2 flex md:hidden'>
+            <Link className='flex flex-col items-center mr-5' href="https://www.instagram.com/blue.jays.bar/" target='_blank'>
+              <Image src="/instagram.svg" alt="instagram BlueJay's" width={30} height={30}/>
+              <p className='text-white text-base font-bold text-center mt-2'>Instagram</p>
+              </Link>       
+            <Link className='flex flex-col items-center'  href="https://www.facebook.com/blue.jays.bar/" target='_blank'>
+              <Image src="/facebook.svg" alt="facebook BlueJay's" width={30} height={30}/>
+              <p className='text-white text-base font-bold text-center mt-2'>Facebook</p>
+              </Link>
+          </div>
+          <div className='font-bold text-lg text-white mt-10 hidden md:flex lg:w-fit'>
+            <ul className='list-disc mr-24'>
+              <li className='my-5'>All rights reserved by the author.</li>
+              <li className='my-5'>bluejaysbar@gmail.com</li>
+              <li className='my-5'>Location in Maps.</li>
+              <li className='my-5'>Menú</li>
             </ul>
-            <div className='mt-2 flex'>
-              <Link className='flex flex-col items-center mr-5' href="https://www.instagram.com/blue.jays.bar/" target='_blank'>
-                <Image src="/instagram.svg" alt="instagram BlueJay's" width={30} height={30}/>
-                <p className='text-white text-base font-bold text-center mt-2'>Instagram</p>
-                </Link>       
-              <Link className='flex flex-col items-center'  href="https://www.facebook.com/blue.jays.bar/" target='_blank'>
-                <Image src="/facebook.svg" alt="facebook BlueJay's" width={30} height={30}/>
-                <p className='text-white text-base font-bold text-center mt-2'>Facebook</p>
-                </Link>
+            <div>
+              <ul className='list-disc'>
+                <li className='my-5'>Horary</li>
+                <li className='my-5'>About BlueJay’s</li>
+                <li className='my-5'>Social networks:</li>
+              </ul>
+              <div className='mt-2 flex'>
+                <Link className='flex flex-col items-center mr-5' href="https://www.instagram.com/blue.jays.bar/" target='_blank'>
+                  <Image src="/instagram.svg" alt="instagram BlueJay's" width={30} height={30}/>
+                  <p className='text-white text-base font-bold text-center mt-2'>Instagram</p>
+                  </Link>       
+                <Link className='flex flex-col items-center'  href="https://www.facebook.com/blue.jays.bar/" target='_blank'>
+                  <Image src="/facebook.svg" alt="facebook BlueJay's" width={30} height={30}/>
+                  <p className='text-white text-base font-bold text-center mt-2'>Facebook</p>
+                  </Link>
+              </div>
             </div>
           </div>
         </div>
