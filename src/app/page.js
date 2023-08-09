@@ -47,7 +47,7 @@ export default function Home() {
             <li className='mx-3 text-white font-bold text-xl my-5'><Link href='#home'>Home</Link></li>
             <li className='mx-3 text-white font-bold text-xl my-5'> <Link href='#About BlueJays'>About BlueJays</Link></li>
             <li className='mx-3 text-white font-bold text-xl my-5'><Link href='/menu'>Menu</Link></li>
-            <li className='mx-3 text-white font-bold text-xl my-5'> <Link href='#horary'> Horary </Link></li>
+            <li className='mx-3 text-white font-bold text-xl my-5'> <Link href='#horary'> Hours </Link></li>
             <li className='mx-3 text-white font-bold text-xl my-5'><Link href='#activities'>Activities</Link></li>
             <li className='mx-3 text-white font-bold text-xl my-5'> <Link href='#Location'>Location </Link></li>
           </ul>
@@ -55,7 +55,7 @@ export default function Home() {
             <li className='mx-3 text-white font-bold text-lg'><Link href='#home'>Home</Link></li>
             <li className='mx-3 text-white font-bold text-lg'> <Link href='#About BlueJays'>About BlueJays</Link></li>
             <li className='mx-3 text-white font-bold text-lg'><Link href='/menu'>Menu</Link></li>
-            <li className='mx-3 text-white font-bold text-lg'> <Link href='#horary'> Horary </Link></li>
+            <li className='mx-3 text-white font-bold text-lg'> <Link href='#horary'> Hours </Link></li>
             <li className='mx-3 text-white font-bold text-lg'><Link href='#activities'>Activities</Link></li>
             <li className='mx-3 text-white font-bold text-lg'> <Link href='#Location'>Location </Link></li>
           </ul>
