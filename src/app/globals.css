@@ -39,7 +39,38 @@ html, body{
 .negativer-footer{
     top: -200px;
 }
-
+#check{
+    display: none;
+}
+#check:checked ~ .hamburguer > div {
+    transition: all .3s ease-in-out;
+}
+nav.sticky{
+    position: fixed;
+    padding: 5px 10px;
+    background: #0073B2;
+}
+#check:checked ~ #links-mobile {
+    display: flex;
+}
+#check:not(:checked) ~ #links-mobile {
+    display: none;
+}
+#check:checked ~ .hamburguer > div:nth-child(2) {
+    opacity: 0;
+}
+#check:checked ~ .hamburguer > div:nth-child(1) {
+    transform: rotate(45deg) translate(2px,6px);
+}
+#check:checked ~ .hamburguer > div:nth-child(3) {
+    transform: rotate(-45deg) translate(10px,-15px);
+}
+#check:not(:checked) ~ .hamburguer > div {
+    transition: all .3s ease-in-out;
+}
+li:active + #links-mobile {
+    display: none;
+}
 .slider-wrapper{
     position: relative;
     margin: 0 auto ;
