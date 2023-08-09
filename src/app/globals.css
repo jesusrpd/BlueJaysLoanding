@@ -15,22 +15,21 @@ html, body{
 
 .negative-drink{
     right: -20px;
-    bottom: -30px;
+    bottom: -10px;
 }
 
 .negative-drink-2{
     right: 0px;
-    bottom: -200px;
+    bottom: -20px;
 }
 
 .negative-sope{
-    bottom: -200px;
+    bottom: -100px;
     left: 0;
-    width: 350px;
 }
 
 .negative-pulpe{
-    bottom: -100px;
+    bottom: -50px;
 }
 
 .negative-carrots{

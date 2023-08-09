@@ -11,6 +11,7 @@ import CarrotsImg from '../../public/img/food/carrots.png'
 import LogotipoIcon from '../../public/logotipo.svg'
 import SopeImg from '../../public/img/food/sope.png'
 import Drink2Img from '../../public/img/drink-2.png'
+import PulpeImg from '../../public/img/food/pulpe.png'
 
 export default function Home() {
   return (
@@ -49,13 +50,13 @@ export default function Home() {
         </div>
         <div className='relative w-64 h-44 md:w-4/5 lg:w-9/12 md:h-fit'>
           <Image src={TeamImg} alt='img from team' className='w-full'/>
-          <Image src={DrinkImg} alt='img from team' className='absolute negative-drink w-16 h-24 md:w-28 md:h-36 lg:w-20 lg:h-24'/>
+          <Image src={DrinkImg} alt='img from drink' className='absolute negative-drink w-16 h-20 md:w-28 md:h-36 lg:w-20 lg:h-24'/>
         </div>
       </section>
       <section className='bg-text bg-grayjays px-10 py-20 md:py-0 md:pt-10 bg-cover relative h-96 md:h-52 md:bg-contain flex flex-col items-center justify-start'>
         <p className='text-white font-bold text-center leading-9 mb-10 md:text-lg md:mb-5 lg:w-2/4'>Giving work to other families and working as a team, I find it fulfilling because I want to help them as others helped me grow.</p>
         <p className='text-white font-bold text-center  md:text-lg '>Hortensia founder of BlueJays</p>
-        <Image src="/img/drink-2.png" alt='drink2' width={159} height={242} className='absolute negative-drink-2 z-10'/>
+        <Image src={Drink2Img} alt='drink2' width={159} height={242} className='w-24 h-60 absolute negative-drink-2 z-10'/>
       </section>
       <section id='activities' className='w-full min-h-screen bg-paper bg-cover pt-28 flex flex-col items-center px-4 pb-20 relative'>
         <h2 className='text-bluejays font-bold text-2xl mb-5 md:text-3xl'>Activitie BlueJays</h2>
@@ -64,7 +65,7 @@ export default function Home() {
           <Card icon="restaurant" title="Restaurant" img_bg="bg-restaurant"/>
           <Card icon="bar" title="Bar" img_bg="bg-bar"/>
         </div>
-        <Image src={SopeImg} alt='sope saucer' className='absolute negative-sope z-10 w-32 h-72'/>
+        <Image src={SopeImg} alt='sope saucer' className='absolute negative-sope z-10 w-44 h-48'/>
       </section>
       <section id='horary'className='w-full min-h-screen bg-horary bg-contain pt-28 flex flex-col items-center px-4 pb-20 relative justify-center bg-grayjays'>
         <div className='w-full'>
@@ -94,7 +95,7 @@ export default function Home() {
             <span className='text-white font-medium text-lg md:text-lg'>8:00am to 2:30am</span>
           </div>
         </div>
-        <Image src="/img/food/pulpe.png"  alt='food pulpe' width={196} height={189} className='absolute right-0 negative-pulpe z-10'/>
+        <Image src={PulpeImg}  alt='food pulpe' className='absolute right-0 negative-pulpe z-10 w-36 h-44'/>
       </section>
       <section id='Location' className='w-full min-h-screen bg-paper bg-cover pt-28 flex flex-col items-center pb-24 px-10 relative'>
       <div className='flex flex-col items-center lg:items-start lg:pl-28'>
