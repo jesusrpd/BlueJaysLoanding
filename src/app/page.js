@@ -62,7 +62,7 @@ export default function Home() {
         </nav>
         <div className='w-full flex flex-col items-center'>
           <h1 className='text-white font-extrabold text-3xl my-2 md:my-5 md:text-6xl'>BLUE JAYS</h1>
-          <h3 className='text-white font-extrabold text-sm my-2 md:my-5 md:text-2xl'>Bar & Restaurant Family</h3>
+          <h2 className='text-white font-extrabold text-sm my-2 md:my-5 md:text-2xl'>Bar & Restaurant Family</h2>
           <Link href="/menu" className='border-yellowjays border-2 px-12 py-2 text-yellowjays font-extrabold text-sm my-2 md:text-lg md:my-5' id='btn-menu'>See menu</Link>
         </div>
         <Image src={AritosImg} alt='img of food aritos' className='absolute bottom-0 negative-position w-72 h-96 md:w-100 md:h-100 lg:hidden'/>
@@ -105,9 +105,9 @@ export default function Home() {
                 <Image  className="shadow-card" id="slide-3" src={imagen3_carusel} alt="imagenes del espacio"/>
             </div>
             <div className="slider-nav ">
-              <a href="#slide-1"></a>
-              <a href="#slide-2"></a>
-              <a href="#slide-3"></a>
+              <a href="#slide-1" aria-label='slide 1'></a>
+              <a href="#slide-2" aria-label='slide 2'></a>
+              <a href="#slide-3" aria-label='slide 3'></a>
           </div>
         </div>
 
@@ -138,7 +138,7 @@ export default function Home() {
           <Image src="/img/location/karaoke.webp" alt='karaoke Bluejays' width={200} height={120}/>
         </div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.509550669264!2d-122.99790952324128!3d45.51995072971649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54951a97f420e69f%3A0xba893c2926ab0b60!2s446%20SW%20Baseline%20St%2C%20Hillsboro%2C%20OR%2097123%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1691003797680!5m2!1ses-419!2smx" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='w-11/12 h-72 rounded-3xl mt-16 shadow-card md:h-96 md:w-3/4 lg:w-1/2 lg:mt-0'></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.509550669264!2d-122.99790952324128!3d45.51995072971649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54951a97f420e69f%3A0xba893c2926ab0b60!2s446%20SW%20Baseline%20St%2C%20Hillsboro%2C%20OR%2097123%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1691003797680!5m2!1ses-419!2smx" title="BlueJay's in Maps" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='w-11/12 h-72 rounded-3xl mt-16 shadow-card md:h-96 md:w-3/4 lg:w-1/2 lg:mt-0'></iframe>
         <Image src={CarrotsImg} alt='carrots Bluejays' className='absolute left-0 negative-carrots z-10 w-44 h-36 md:w-96 md:h-80 lg:w-52 lg:h-44'/>
       </section>
       <footer className='w-full min-h-screen bg-footer lg:bg-footer-desktop bg-cover relative bg-grayjays flex flex-col justify-center items-center lg:flex-row lg:justify-evenly lg:items-center lg:pt-20'>
