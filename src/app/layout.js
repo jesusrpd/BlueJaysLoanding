@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <head>
-        <meta name='robots' content='index,follow'/>
+        <meta name='robots' content='noindex'/>
         <meta property='og:title' content="BlueJay's Bar and Restaurant Family"/>
         <meta property='og:description' content='Bring your family or friends to enjoy our burgers, tacos, octopus cocktails, drinks prepared by professional bartenders.'/>
         <meta property='og:image' content='../../public/img/logotipo.webp'/>

@@ -65,7 +65,7 @@ export default function Home() {
           <h2 className='text-white font-extrabold text-sm my-2 md:my-5 md:text-2xl'>Bar & Restaurant Family</h2>
           <Link href="/menu" className='border-yellowjays border-2 px-12 py-2 text-yellowjays font-extrabold text-sm my-2 md:text-lg md:my-5' id='btn-menu'>See menu</Link>
         </div>
-        <Image src={AritosImg} alt='img of food aritos' className='absolute bottom-0 negative-position w-72 h-96 md:w-100 md:h-100 lg:hidden'/>
+        <Image src={AritosImg} alt='img of food aritos' className='absolute bottom-0 negative-position w-101 h-101 md:w-100 md:h-100 lg:hidden'/>
         <Image src={AritosDesktopImg} alt='img of food aritos' className='absolute bottom-0 negative-position w-72 h-96 md:w-100 md:h-100 hidden lg:inline-block'/>
       </main>
       <section id='About BlueJays' className='w-screen min-h-screen bg-paper bg-cover pt-11 flex flex-col items-center px-4 pb-20 lg:flex-row lg:justify-center lg:pr-24'>
@@ -78,13 +78,13 @@ export default function Home() {
         </div>
         <div className='relative w-64 h-44 md:w-4/5 lg:w-9/12 md:h-fit'>
           <Image src={TeamImg} alt='img from team' className='w-full'/>
-          <Image src={DrinkImg} alt='img from drink' className='absolute negative-drink w-16 h-20 md:w-28 md:h-36 lg:w-20 lg:h-24'/>
+          <Image src={DrinkImg} alt='img from drink' className='absolute negative-drink w-104 h-104 md:w-28 md:h-36 lg:w-20 lg:h-24'/>
         </div>
       </section>
       <section className='bg-text bg-grayjays px-10 py-20 md:py-0 md:pt-10 bg-cover relative h-96 md:h-52 md:bg-contain flex flex-col items-center justify-start'>
         <p className='text-white font-bold text-center leading-9 mb-10 md:text-lg md:mb-5 lg:w-2/4'>Giving work to other families and working as a team, I find it fulfilling because I want to help them as others helped me grow.</p>
         <p className='text-white font-bold text-center  md:text-lg '>Hortensia founder of BlueJays</p>
-        <Image src={Drink2Img} alt='drink2' className='w-24 h-60 absolute negative-drink-2 z-10 md:w-32 md:h-72'/>
+        <Image src={Drink2Img} alt='drink2' className='w-103 h-103 absolute negative-drink-2 z-10 md:w-32 md:h-72'/>
       </section>
       <section id='activities' className='w-full min-h-screen bg-paper bg-cover pt-28 flex flex-col items-center px-4 pb-20 relative'>
         <h2 className='text-bluejays font-bold text-2xl mb-5 md:text-3xl'>Activitie BlueJays</h2>
@@ -93,7 +93,7 @@ export default function Home() {
           <Card icon="restaurant" title="Restaurant" img_bg="bg-restaurant"/>
           <Card icon="bar" title="Bar" img_bg="bg-bar"/>
         </div>
-        <Image src={SopeImg} alt='sope saucer' className='absolute negative-sope z-10 w-44 h-48 md:w-72 md:h-72'/>
+        <Image src={SopeImg} alt='sope saucer' className='absolute negative-sope z-10 w-102 h-102 md:w-72 md:h-72'/>
       </section>
       <section id='horary' className='w-full min-h-screen bg-horary bg-contain pt-28 flex flex-col items-center px-4 pb-20 relative justify-center bg-grayjays lg:flex-row lg:justify-evenly lg:items-center'>
         <div className='w-full lg:w-1/2'>
