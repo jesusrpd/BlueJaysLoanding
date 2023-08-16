@@ -12,7 +12,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <head>
-        <meta name='robots' content='index'/>
         <meta name='description' content='Bring your family or friends to enjoy our burgers, tacos, octopus cocktails, drinks prepared by professional bartenders.'/>
         <meta name='keywords' content="mexican food, bar, restaurant, family, hamburger, tacos, cocktails, cakes, beverages, blue jays, bluejays, bluejay's, bluejay's restaurant"/>
         <meta property='og:title' content="BlueJay's Bar and Restaurant Family"/>
