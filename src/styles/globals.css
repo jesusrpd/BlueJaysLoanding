@@ -1,27 +1,204 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html{
+    scroll-behavior: smooth;
+}
+html, body{
+    overflow-x: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.negative-position{
+    left: -60px;
+    bottom: -90px;
+}
+
+.negative-drink{
+    right: -20px;
+    bottom: -10px;
+}
+
+.negative-drink-2{
+    right: 0px;
+    bottom: -20px;
+}
+
+.negative-sope{
+    bottom: -100px;
+    left: 0;
+}
+
+.negative-pulpe{
+    bottom: -50px;
+}
+
+.negative-carrots{
+    bottom: -50px;
+}
+
+.negativer-footer{
+    top: -200px;
+}
+#check{
+    display: none;
+}
+#check:checked ~ .hamburguer > div {
+    transition: all .3s ease-in-out;
+}
+nav.sticky{
+    position: fixed;
+    padding: 5px 10px;
+    background: #0074b2b7;
+}
+#check:checked ~ #links-mobile {
+    display: flex;
+}
+#check:not(:checked) ~ #links-mobile {
+    display: none;
+}
+#check:checked ~ .hamburguer > div:nth-child(2) {
+    opacity: 0;
+}
+#check:checked ~ .hamburguer > div:nth-child(1) {
+    transform: rotate(45deg) translate(2px,6px);
+}
+#check:checked ~ .hamburguer > div:nth-child(3) {
+    transform: rotate(-45deg) translate(10px,-15px);
+}
+#check:not(:checked) ~ .hamburguer > div {
+    transition: all .3s ease-in-out;
+}
+li:active + #links-mobile {
+    display: none;
+}
+.slider-wrapper{
+    position: relative;
+    margin: 0 auto ;
+    box-shadow: 4px 6px 10px 0px rgba(0, 0, 0, 0.55);
+    border-radius: 20px;
+  
   }
+  .slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 20px;
+    
+
+  }
+  .slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    height: inherit;
+    width: inherit;
+    border-radius: 20px;
+    
+  }
+  .slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  .slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+  }
+  .slider-nav a:hover{
+    opacity: 1;
+  }
+
+  .img-team{
+    width: 200px;
+    height: 100px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+#btn-menu {
+    --color: #E8A800;
+    position: relative;
+    overflow: hidden;
+    transition: color .5s;
+    z-index: 1;
+    color: var(--color);
+}
+   
+#btn-menu:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 250px;
+    border-radius: 50%;
+}
+   
+#btn-menu:hover {
+    color: #fff;
+}
+   
+#btn-menu:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+   
+#btn-menu:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+    .negative-drink{
+        right: -30px;
+        bottom: -10px;
+    }
+    .negative-drink-2{
+        right: 0px;
+        bottom: -80px;
+    }
+    .negative-margin-text{
+        margin-top: -20;
+    }
+    .negative-position{
+        bottom: -250px;
+    }
+    .negative-carrots{
+        bottom: -150px;
+    }
+    .negative-sope{
+        bottom: -150px;
+        left: 0;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .negative-position{
+        left: 93px;
+        bottom: -250px;
+    }
+    .negative-drink{
+        right: -30px;
+        bottom: -10px;
+    }
+    .negative-drink-2{
+        right: 0px;
+        bottom: -100px;
+    }
+    .negative-sope{
+        bottom: -180px;
+        left: 0;
+    }
+    .negative-carrots{
+        bottom: -200px;
+    }
 }

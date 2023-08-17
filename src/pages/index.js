@@ -1,118 +1,206 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import Link from 'next/link'
+import Card from '@/components/Card'
+import imagen3_carusel from '../../public/img/cards/restaurant.webp'
+import imagen2_carusel from "../../public/img/cards/karaoke.webp"
+import imagen1_carusel from "../../public/img/cards/bar.webp"
+import TeamImg from '../../public/img/team.webp'
+import DrinkImg from '../../public/img/drink.webp'
+import AritosImg from '../../public/img/food/aritos.webp'
+import AritosDesktopImg from '../../public/img/food/aritos-desktop.webp'
+import CarrotsImg from '../../public/img/food/carrots.webp'
+import LogotipoIcon from '../../public/logotipo.svg'
+import SopeImg from '../../public/img/food/sope.webp'
+import Drink2Img from '../../public/img/drink-2.webp'
+import PulpeImg from '../../public/img/food/pulpe.webp'
+import { useEffect } from 'react'
+import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+  useEffect(() => {
+    window.addEventListener('scroll', ()=>{
+        const nav = document.getElementById('navbar');
+        if(window.scrollY > 0){
+          nav.classList.add('sticky', window.scrollY > 0);
+        }else{
+          nav.classList.remove('sticky', window.scrollY > 0);
+        }
+        
+    })    
+  },[])
+
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+    <Head>
+      <title>Blue Jay&apos;s</title>
+      <link rel="icon" href="favicon.ico" sizes="any" />
+      <meta name='description' content='Bring your family or friends to enjoy our burgers, tacos, octopus cocktails, drinks prepared by professional bartenders.'/>
+      <meta name='keywords' content="mexican food, bar, restaurant, family, hamburger, tacos, cocktails, cakes, beverages, blue jays, bluejays, bluejay's, bluejay's restaurant"/>
+      <meta property='og:title' content="BlueJay's Bar and Restaurant Family"/>
+      <meta property='og:description' content='Bring your family or friends to enjoy our burgers, tacos, octopus cocktails, drinks prepared by professional bartenders.'/>
+      <meta property='og:image' content='../../public/img/logotipo.webp'/>
+    </Head>
+    <main id='home' className='w-full h-screen bg-main md:bg-main-tablet lg:bg-main-desktop bg-cover md:bg-no-repeat flex items-center relative bg-grayjays'>
+      <nav className='flex w-full justify-between items-center px-4 pt-4 fixed top-0 left-0 lg:p-5 z-30 pb-2 md:pb-0' id='navbar'>
+        <Image src="/img/logotipo.webp" alt="logotipo Buejay's" width={59} height={60} className='z-40'/>
+        <input type='checkbox' id='check'/>
+        <label className='nav-lines-container cursor-pointer h-fit md:hidden hamburguer z-40' htmlFor="check">
+          <div className='w-8 h-1 bg-white rounded-2xl my-2'></div>
+          <div className='w-8 h-1 bg-white rounded-2xl my-2'></div>
+          <div className='w-8 h-1 bg-white rounded-2xl my-2'></div>
+        </label>
+        <ul className='flex-col items-center md:hidden absolute top-0 left-0 w-full h-screen justify-center bg-bluejays' id='links-mobile'>
+          <li className='mx-3 text-white font-bold text-xl my-5'><Link href='#home'>Home</Link></li>
+          <li className='mx-3 text-white font-bold text-xl my-5'> <Link href='#About BlueJays'>About BlueJay&apos;s</Link></li>
+          <li className='mx-3 text-white font-bold text-xl my-5'><Link href='/menu'>Menu</Link></li>
+          <li className='mx-3 text-white font-bold text-xl my-5'> <Link href='#horary'> Hours </Link></li>
+          <li className='mx-3 text-white font-bold text-xl my-5'><Link href='#activities'>Activities</Link></li>
+          <li className='mx-3 text-white font-bold text-xl my-5'> <Link href='#Location'>Location </Link></li>
+        </ul>
+        <ul className='hidden md:flex'>
+          <li className='mx-3 text-white font-bold text-lg'><Link href='#home'>Home</Link></li>
+          <li className='mx-3 text-white font-bold text-lg'> <Link href='#About BlueJays'>About BlueJay&apos;s</Link></li>
+          <li className='mx-3 text-white font-bold text-lg'><Link href='/menu'>Menu</Link></li>
+          <li className='mx-3 text-white font-bold text-lg'> <Link href='#horary'> Hours </Link></li>
+          <li className='mx-3 text-white font-bold text-lg'><Link href='#activities'>Activities</Link></li>
+          <li className='mx-3 text-white font-bold text-lg'> <Link href='#Location'>Location </Link></li>
+        </ul>
+      </nav>
+      <div className='w-full flex flex-col items-center'>
+        <h1 className='text-white font-extrabold text-3xl my-2 md:my-5 md:text-6xl'>BLUE JAY&apos;S</h1>
+        <h2 className='text-white font-extrabold text-sm my-2 md:my-5 md:text-2xl'>Bar & Restaurant Family</h2>
+        <Link href="/menu" className='border-yellowjays border-2 px-12 py-2 text-yellowjays font-extrabold text-sm my-2 md:text-lg md:my-5' id='btn-menu'>See menu</Link>
+      </div>
+      <Image src={AritosImg} alt='img of food aritos' className='absolute bottom-0 negative-position w-101 h-101 md:w-100 md:h-100 lg:hidden'/>
+      <Image src={AritosDesktopImg} alt='img of food aritos' className='absolute bottom-0 negative-position w-72 h-96 md:w-100 md:h-100 hidden lg:inline-block'/>
+    </main>
+    <section id='About BlueJays' className='w-screen min-h-screen bg-paper bg-cover pt-11 flex flex-col items-center px-4 pb-20 lg:flex-row lg:justify-center lg:pr-24'>
+      <div className='md:flex md:flex-col md:items-center lg:w-fit'>
+        <h2 className='text-bluejays font-bold text-2xl mb-5 md:mt-28 md:text-3xl text-center'>About BlueJay&apos;s</h2>
+        <div className='mb-20 md:w-3/4'>
+          <p className='mb-10 leading-9 text-center font-bold md:text-lg lg:text-left'>In September 2014 I opened <span className='text-bluejays md:text-lg'>BlueJay&apos;s</span>, a restaurant that was named after the many birds called Blue Jay&apos;s, thats where the name of this restaurant comes from.</p>
+          <p className='leading-9 text-center font-bold md:text-lg lg:text-left'>Later in 2019 we changed our location to <span className='text-yellowjays md:text-lg'>Hillsboro Oregon</span> but kept the same name BlueJay&apos;s. Since then we decided to expand and offer both bar and restaurant service since that is what we enjoy doing so much at <span className='text-bluejays md:text-lg'>BlueJay&apos;s</span>.</p>
+        </div>
+      </div>
+      <div className='relative w-64 h-44 md:w-4/5 lg:w-9/12 md:h-fit'>
+        <Image src={TeamImg} alt='img from team' className='w-full'/>
+        <Image src={DrinkImg} alt='img from drink' className='absolute negative-drink w-104 h-104 md:w-28 md:h-36 lg:w-20 lg:h-24'/>
+      </div>
+    </section>
+    <section className='bg-text bg-grayjays px-10 py-20 md:py-0 md:pt-10 bg-cover relative h-96 md:h-52 md:bg-contain flex flex-col items-center justify-start'>
+      <p className='text-white font-bold text-center leading-9 mb-10 md:text-lg md:mb-5 lg:w-2/4'>Giving work to other families and working as a team, I find it fulfilling because I want to help them as others helped me grow.</p>
+      <p className='text-white font-bold text-center  md:text-lg '>Hortensia founder of BlueJay&apos;s</p>
+      <Image src={Drink2Img} alt='drink2' className='w-103 h-103 absolute negative-drink-2 z-10 md:w-32 md:h-72'/>
+    </section>
+    <section id='activities' className='w-full min-h-screen bg-paper bg-cover pt-28 flex flex-col items-center px-4 pb-20 relative'>
+      <h2 className='text-bluejays font-bold text-2xl mb-5 md:text-3xl'>Activitie BlueJay&apos;s</h2>
+      <div className='md:flex md:flex-wrap md:justify-center'>
+        <Card icon="karaoke" title="Karaoke" img_bg="bg-karaoke"/>
+        <Card icon="restaurant" title="Restaurant" img_bg="bg-restaurant"/>
+        <Card icon="bar" title="Bar" img_bg="bg-bar"/>
+      </div>
+      <Image src={SopeImg} alt='sope saucer' className='absolute negative-sope z-10 w-102 h-102 md:w-72 md:h-72'/>
+    </section>
+    <section id='horary' className='w-full min-h-screen bg-horary bg-contain pt-28 flex flex-col items-center px-4 pb-20 relative justify-center bg-grayjays lg:flex-row lg:justify-evenly lg:items-center'>
+      <div className='w-full lg:w-1/2'>
+      <div className='w-full'>
+        <div className="slider-wrapper md:w-9/12 md:mb-20 w-4/5 lg:mb-5">
+          <div className="slider ">
+              <Image  className="shadow-card" id="slide-1 " src={imagen1_carusel} alt="imagenes del espacio"/>
+              <Image  className="shadow-card" id="slide-2" src={imagen2_carusel} alt="imagenes del espacio"/>
+              <Image  className="shadow-card" id="slide-3" src={imagen3_carusel} alt="imagenes del espacio"/>
+          </div>
+          <div className="slider-nav ">
+            <a href="#slide-1" aria-label='slide 1'></a>
+            <a href="#slide-2" aria-label='slide 2'></a>
+            <a href="#slide-3" aria-label='slide 3'></a>
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+        <h3 className='text-white font-bold text-2xl my-10 text-center lg:mt-5'>OPEN EVERYDAY!</h3>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
       </div>
-    </main>
+      <div className='lg:flex lg:flex-col lg:items-center mt-5 lg:mt-0'>
+        <h3 className='text-white font-bold text-3xl text-center'>Horary</h3>
+        <div className='mt-10 text-center'>
+          <p className='text-white font-bold text-2xl mb-2 md:text-2xl'>Monday to Friday</p>
+          <span className='text-white font-medium text-lg md:text-lg'>2:30pm to 2:30am</span>
+        </div>
+        <div className='mt-10 text-center'>
+          <p className='text-white font-bold text-2xl mb-2 md:text-2xl'>Saturday to Sunday</p>
+          <span className='text-white font-medium text-lg md:text-lg'>8:00am to 2:30am</span>
+        </div>
+      </div>
+      <Image src={PulpeImg}  alt='food pulpe' className='absolute right-0 negative-pulpe z-10 w-36 h-44 md:w-56 md:h-72'/>
+    </section>
+    <section id='Location' className='w-full min-h-screen bg-paper bg-cover pt-28 flex flex-col items-center pb-24 px-10 relative lg:flex-row lg:justify-evenly lg:items-center'>
+    <div className='flex flex-col items-center lg:items-start lg:pl-20'>
+      <h2 className='text-bluejays font-bold text-2xl mb-5 relative md:text-3xl'>Location BlueJay&apos;s</h2>
+      <p className='text-base text-center leading-9 font-bold mb-5 md:text-lg lg:text-left lg:w-4/5'>We are located at: <Link className='text-yellowjays underline md:text-lg' href='https://goo.gl/maps/pxBEU7Aznj5vUGBK9' target='_blank'>446 SW Baseline St Hillsboro, OR 97123 EE. UU.</Link> </p>
+      <p className='text-base text-center leading-9 font-bold md:text-lg lg:text-left lg:w-4/5'>Take your family to the restaurant or enjoy a nice evening with your friends in our bar section. We look forward to seeing you soon!</p>
+      <div className='md:flex md:mt-10'>
+        <Image src="/img/location/restaurant.webp" alt='restaurant Bluejay&apos;s' width={200} height={120}/>
+        <Image src="/img/location/bar.webp" alt='bar Bluejay&apos;s' width={200} height={120}/>
+        <Image src="/img/location/karaoke.webp" alt='karaoke Bluejay&apos;s' width={200} height={120}/>
+      </div>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1865.786711980167!2d-122.99655561780138!3d45.51973091509433!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54951b2bb7976d9d%3A0x5650f9c4e5c47e81!2sBlue%20Jay&#39;s%20Bar!5e0!3m2!1ses-419!2smx!4v1692216840610!5m2!1ses-419!2smx" title="BlueJay's in Maps" width="600" height="450" style={{border: 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='w-11/12 h-72 rounded-3xl mt-16 shadow-card md:h-96 md:w-3/4 lg:w-1/2 lg:mt-0'></iframe>
+      <Image src={CarrotsImg} alt='carrots Bluejay&apos;s' className='absolute left-0 negative-carrots z-10 w-44 h-36 md:w-96 md:h-80 lg:w-52 lg:h-44'/>
+    </section>
+    <footer className='w-full min-h-screen bg-footer lg:bg-footer-desktop bg-cover relative bg-grayjays flex flex-col justify-center items-center lg:flex-row lg:justify-evenly lg:items-center lg:pt-20'>
+      <Image src={LogotipoIcon} alt='logotipo BlueJay&apos;s' className='w-32 h-24 md:w-64 md:h-64 md:mb-10 lg:w-52 lg:h-52'/>
+      <div className='lg:w-1/2 flex flex-col items-center'>
+        <p className='text-white text-center leading-9 font-bold mt-5 mx-10 text-lg lg:w-11/12'>Giving work to other families and working as a team, I find it fulfilling because I want to help them as others helped me grow.</p>
+        <ul className='font-bold text-lg text-white mt-5 list-disc md:hidden'>
+          <li className='my-5'>All rights reserved by the author.</li>
+          <li className='my-5'>bluejaysbar@gmail.com</li>
+          <li className='my-5'>Location in Maps.</li>
+          <li className='my-5'>Menú</li>
+          <li className='my-5'>Horary</li>
+          <li className='my-5'>About BlueJay&apos;s</li>
+          <li className='my-5'>Social networks:</li>
+        </ul>
+        <div className='mt-2 flex md:hidden'>
+          <Link className='flex flex-col items-center mr-5' href="https://www.instagram.com/blue.jays.bar/" target='_blank'>
+            <Image src="/instagram.svg" alt="instagram BlueJay's" width={30} height={30}/>
+            <p className='text-white text-base font-bold text-center mt-2'>Instagram</p>
+            </Link>       
+          <Link className='flex flex-col items-center'  href="https://www.facebook.com/blue.jays.bar/" target='_blank'>
+            <Image src="/facebook.svg" alt="facebook BlueJay's" width={30} height={30}/>
+            <p className='text-white text-base font-bold text-center mt-2'>Facebook</p>
+            </Link>
+        </div>
+        <div className='font-bold text-lg text-white mt-10 hidden md:flex lg:w-fit'>
+          <ul className='list-disc mr-24'>
+            <li className='my-5'>All rights reserved by the author.</li>
+            <li className='my-5'>bluejaysbar@gmail.com</li>
+            <li className='my-5'>Location in Maps.</li>
+            <li className='my-5'>Menú</li>
+          </ul>
+          <div>
+            <ul className='list-disc'>
+              <li className='my-5'>Horary</li>
+              <li className='my-5'>About BlueJay&apos;s</li>
+              <li className='my-5'>Social networks:</li>
+            </ul>
+            <div className='mt-2 flex'>
+              <Link className='flex flex-col items-center mr-5' href="https://www.instagram.com/blue.jays.bar/" target='_blank'>
+                <Image src="/instagram.svg" alt="instagram BlueJay's" width={30} height={30}/>
+                <p className='text-white text-base font-bold text-center mt-2'>Instagram</p>
+                </Link>       
+              <Link className='flex flex-col items-center'  href="https://www.facebook.com/blue.jays.bar/" target='_blank'>
+                <Image src="/facebook.svg" alt="facebook BlueJay's" width={30} height={30}/>
+                <p className='text-white text-base font-bold text-center mt-2'>Facebook</p>
+                </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </>    
   )
 }
