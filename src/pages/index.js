@@ -37,6 +37,8 @@ export default function Home() {
     <>
     <Head>
       <title>Blue Jay&apos;s</title>
+      <link rel="canonical" href="https://www.bluejayshillsboro.com.com/"/>
+      <meta name="robots" content="index, follow"/>
       <link rel="icon" href="favicon.ico" sizes="any" />
       <meta name='description' content='Bring your family or friends to enjoy our burgers, tacos, octopus cocktails, drinks prepared by professional bartenders.'/>
       <meta name='keywords' content="mexican food, bar, restaurant, family, hamburger, tacos, cocktails, cakes, beverages, blue jays, bluejays, bluejay's, bluejay's restaurant"/>
