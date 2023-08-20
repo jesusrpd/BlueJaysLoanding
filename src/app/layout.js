@@ -8,7 +8,6 @@ export const metadata = {
   ogDescription: 'Bring your family or friends to enjoy our burgers, tacos, octopus cocktails, drinks prepared by professional bartenders.',
   ogImage: '../../public/img/logotipo.webp',
   canonical: "https://www.bluejayshillsboro.com.com/",
-  robots: "index, follow"
 }
 
 export default function RootLayout({ children }) {
