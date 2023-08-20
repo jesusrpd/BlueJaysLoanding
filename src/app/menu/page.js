@@ -1,4 +1,3 @@
-'use client'
 import Image from 'next/image'
 import Menu1 from '../../../public/menu/menu-1.webp'
 import Menu2 from '../../../public/menu/menu-2.webp'

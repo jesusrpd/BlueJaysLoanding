@@ -1,5 +1,3 @@
-"use client"
-
 import Card from '@/components/Card'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -15,51 +13,15 @@ import LogotipoIcon from '../../public/logotipo.svg'
 import SopeImg from '../../public/img/food/sope.webp'
 import Drink2Img from '../../public/img/drink-2.webp'
 import PulpeImg from '../../public/img/food/pulpe.webp'
-import { useEffect } from 'react'
+import NavBar from '@/components/Navbar'
 
 
 export default function Home() {
 
-  useEffect(() => {
-    window.addEventListener('scroll', ()=>{
-        const nav = document.getElementById('navbar');
-        if(window.scrollY > 0){
-          nav.classList.add('sticky', window.scrollY > 0);
-        }else{
-          nav.classList.remove('sticky', window.scrollY > 0);
-        }
-        
-    })
-  },[])
-
   return (
     <>
       <main id='home' className='w-full h-screen bg-main md:bg-main-tablet lg:bg-main-desktop bg-cover md:bg-no-repeat flex items-center relative bg-grayjays'>
-        <nav className='flex w-full justify-between items-center px-4 pt-4 fixed top-0 left-0 lg:p-5 z-30 pb-2 md:pb-0' id='navbar'>
-          <Image src="/img/logotipo.webp" alt="logotipo Buejay's" width={59} height={60} className='z-40'/>
-          <input type='checkbox' id='check'/>
-          <label className='nav-lines-container cursor-pointer h-fit md:hidden hamburguer z-40' htmlFor="check">
-            <div className='w-8 h-1 bg-white rounded-2xl my-2'></div>
-            <div className='w-8 h-1 bg-white rounded-2xl my-2'></div>
-            <div className='w-8 h-1 bg-white rounded-2xl my-2'></div>
-          </label>
-          <ul className='flex-col items-center md:hidden absolute top-0 left-0 w-full h-screen justify-center bg-bluejays' id='links-mobile'>
-            <li className='mx-3 text-white font-bold text-xl my-5'><Link href='#home'>Home</Link></li>
-            <li className='mx-3 text-white font-bold text-xl my-5'> <Link href='#About BlueJays'>About BlueJays</Link></li>
-            <li className='mx-3 text-white font-bold text-xl my-5'><Link href='/menu'>Menu</Link></li>
-            <li className='mx-3 text-white font-bold text-xl my-5'> <Link href='#horary'> Hours </Link></li>
-            <li className='mx-3 text-white font-bold text-xl my-5'><Link href='#activities'>Activities</Link></li>
-            <li className='mx-3 text-white font-bold text-xl my-5'> <Link href='#Location'>Location </Link></li>
-          </ul>
-          <ul className='hidden md:flex'>
-            <li className='mx-3 text-white font-bold text-lg'><Link href='#home'>Home</Link></li>
-            <li className='mx-3 text-white font-bold text-lg'> <Link href='#About BlueJays'>About BlueJays</Link></li>
-            <li className='mx-3 text-white font-bold text-lg'><Link href='/menu'>Menu</Link></li>
-            <li className='mx-3 text-white font-bold text-lg'> <Link href='#horary'> Hours </Link></li>
-            <li className='mx-3 text-white font-bold text-lg'><Link href='#activities'>Activities</Link></li>
-            <li className='mx-3 text-white font-bold text-lg'> <Link href='#Location'>Location </Link></li>
-          </ul>
-        </nav>
+        <NavBar/>
         <div className='w-full flex flex-col items-center'>
           <h1 className='text-white font-extrabold text-3xl my-2 md:my-5 md:text-6xl'>BLUE JAYS</h1>
           <h2 className='text-white font-extrabold text-sm my-2 md:my-5 md:text-2xl'>Bar & Restaurant Family</h2>
