@@ -39,6 +39,10 @@ html, body{
 .negativer-footer{
     top: -200px;
 }
+.negative-menu-sope{
+    right: -80px;
+}
+
 #check{
     display: none;
 }
