@@ -30,20 +30,20 @@ export default function NavBar(){
             <div className='w-8 h-1 bg-white rounded-2xl my-2'></div>
           </label>
           <ul className='flex-col items-center md:hidden absolute top-0 left-0 w-full h-screen justify-center bg-bluejays' id='links-mobile'>
-            <li className='mx-3 text-white font-bold text-xl my-5'><Link href='#home'>Home</Link></li>
-            <li className='mx-3 text-white font-bold text-xl my-5'> <Link href='#About BlueJays'>About BlueJays</Link></li>
+            <li className='mx-3 text-white font-bold text-xl my-5'><a href='#home'>Home</a></li>
+            <li className='mx-3 text-white font-bold text-xl my-5'> <a href='#About BlueJays'>About BlueJays</a></li>
             <li className='mx-3 text-white font-bold text-xl my-5'><Link href='/menu'>Menu</Link></li>
-            <li className='mx-3 text-white font-bold text-xl my-5'> <Link href='#horary'> Hours </Link></li>
-            <li className='mx-3 text-white font-bold text-xl my-5'><Link href='#activities'>Activities</Link></li>
-            <li className='mx-3 text-white font-bold text-xl my-5'> <Link href='#Location'>Location </Link></li>
+            <li className='mx-3 text-white font-bold text-xl my-5'> <a href='#horary'> Hours </a></li>
+            <li className='mx-3 text-white font-bold text-xl my-5'><a href='#activities'>Activities</a></li>
+            <li className='mx-3 text-white font-bold text-xl my-5'> <a href='#Location'>Location </a></li>
           </ul>
           <ul className='hidden md:flex'>
-            <li className='mx-3 text-white font-bold text-lg'><Link href='#home'>Home</Link></li>
-            <li className='mx-3 text-white font-bold text-lg'> <Link href='#About BlueJays'>About BlueJays</Link></li>
+            <li className='mx-3 text-white font-bold text-lg'><a href='#home'>Home</a></li>
+            <li className='mx-3 text-white font-bold text-lg'> <a href='#About BlueJays'>About BlueJays</a></li>
             <li className='mx-3 text-white font-bold text-lg'><Link href='/menu'>Menu</Link></li>
-            <li className='mx-3 text-white font-bold text-lg'> <Link href='#horary'> Hours </Link></li>
-            <li className='mx-3 text-white font-bold text-lg'><Link href='#activities'>Activities</Link></li>
-            <li className='mx-3 text-white font-bold text-lg'> <Link href='#Location'>Location </Link></li>
+            <li className='mx-3 text-white font-bold text-lg'> <a href='#horary'> Hours </a></li>
+            <li className='mx-3 text-white font-bold text-lg'><a href='#activities'>Activities</a></li>
+            <li className='mx-3 text-white font-bold text-lg'> <a href='#Location'>Location </a></li>
           </ul>
         </nav>
     )

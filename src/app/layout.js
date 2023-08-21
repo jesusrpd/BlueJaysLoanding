@@ -1,7 +1,7 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'Blue Jay\'s',
+  title: 'Blue Jay\'s Bar',
   description: 'Bring your family or friends to enjoy our burgers, tacos, octopus cocktails, drinks prepared by professional bartenders.',
   keywords: "mexican food, bar, restaurant, family, hamburger, tacos, cocktails, cakes, beverages, blue jays, bluejays, bluejay's, bluejay's restaurant",
   ogTitle: "BlueJay's Bar and Restaurant Family",

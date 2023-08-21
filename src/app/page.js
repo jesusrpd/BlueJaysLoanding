@@ -15,7 +15,6 @@ import Drink2Img from '../../public/img/drink-2.webp'
 import PulpeImg from '../../public/img/food/pulpe.webp'
 import NavBar from '@/components/Navbar'
 
-
 export default function Home() {
 
   return (
@@ -103,6 +102,11 @@ export default function Home() {
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1865.786711980167!2d-122.99655561780138!3d45.51973091509433!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54951b2bb7976d9d%3A0x5650f9c4e5c47e81!2sBlue%20Jay&#39;s%20Bar!5e0!3m2!1ses-419!2smx!4v1692216840610!5m2!1ses-419!2smx" title="BlueJay's in Maps" width="600" height="450" style={{border: 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='w-11/12 h-72 rounded-3xl mt-16 shadow-card md:h-96 md:w-3/4 lg:w-1/2 lg:mt-0'></iframe>
         <Image src={CarrotsImg} alt='carrots Bluejays' className='absolute left-0 negative-carrots z-10 w-44 h-36 md:w-96 md:h-80 lg:w-52 lg:h-44'/>
       </section>
+      <Link href="https://www.ubereats.com/store/blue-jays-restaurant-&-bar/3wYJcLaDVZuTF8dX9B44tA?diningMode=DELIVERY" target='_blank'>
+        <div className='fixed bottom-4 right-4 z-40'>
+          <Image src="/uber_eats.svg" alt='icon uber eats' width={84} height={84}/>
+        </div>
+      </Link>
       <footer className='w-full min-h-screen bg-footer lg:bg-footer-desktop bg-cover relative bg-grayjays flex flex-col justify-center items-center lg:flex-row lg:justify-evenly lg:items-center lg:pt-20'>
         <Image src={LogotipoIcon} alt='logotipo BlueJays' className='w-32 h-24 md:w-64 md:h-64 md:mb-10 lg:w-52 lg:h-52'/>
         <div className='lg:w-1/2 flex flex-col items-center'>
