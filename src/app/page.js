@@ -31,19 +31,19 @@ export const metadata = {
   },
   creator: "Jesús Rodrigo",
   locale: "en-US",
-  // robots: {
-  //   index: false,
-  //   follow: true,
-  //   nocache: true,
-  //   googleBot: {
-  //     index: true,
-  //     follow: false,
-  //     noimageindex: true,
-  //     'max-video-preview': -1,
-  //     'max-image-preview': 'large',
-  //     'max-snippet': -1,
-  //   }
-  // },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    }
+  },
   icons: {
     icon: "/favicon.ico"
   }
@@ -139,6 +139,11 @@ export default function Home() {
       <Link href="https://www.ubereats.com/store/blue-jays-restaurant-&-bar/3wYJcLaDVZuTF8dX9B44tA?diningMode=DELIVERY" target='_blank'>
         <div className='fixed bottom-2 right-2 z-40'>
           <Image src="/uber_eats.svg" alt='icon uber eats' width={74} height={74}/>
+        </div>
+      </Link>
+      <Link href="https://www.doordash.com/es-MX/store/blue-jays-rest-hillsboro-24902983/?event_type=autocomplete&pickup=false" target='_blank'>
+        <div className='fixed bottom-24 bg-white right-2 z-40 w-20 h-20 rounded-full flex items-center justify-center'>
+          <Image src="/doordash.svg" alt='icon door dash' width={74} height={74}/>
         </div>
       </Link>
       <footer className='w-full min-h-screen bg-footer lg:bg-footer-desktop bg-cover relative bg-grayjays flex flex-col justify-center items-center lg:flex-row lg:justify-evenly lg:items-center lg:pt-20'>
