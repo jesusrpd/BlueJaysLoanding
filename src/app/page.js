@@ -31,19 +31,19 @@ export const metadata = {
   },
   creator: "Jesús Rodrigo",
   locale: "en-US",
-  robots: {
-    index: false,
-    follow: true,
-    nocache: true,
-    googleBot: {
-      index: true,
-      follow: false,
-      noimageindex: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    }
-  },
+  // robots: {
+  //   index: false,
+  //   follow: true,
+  //   nocache: true,
+  //   googleBot: {
+  //     index: true,
+  //     follow: false,
+  //     noimageindex: true,
+  //     'max-video-preview': -1,
+  //     'max-image-preview': 'large',
+  //     'max-snippet': -1,
+  //   }
+  // },
   icons: {
     icon: "/favicon.ico"
   }
