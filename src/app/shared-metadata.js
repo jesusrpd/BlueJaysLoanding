@@ -1,0 +1,1 @@
+export const openGraphImage = {images: ["https://bluejayshillsboro.com/public/img/logotipo.webp"]}

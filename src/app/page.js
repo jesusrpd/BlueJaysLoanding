@@ -4,7 +4,7 @@ import Link from 'next/link'
 import imagen3_carusel from '../../public/slider/Ccamarones.webp'
 import imagen2_carusel from "../../public/slider/chickenwings.webp"
 import imagen1_carusel from "../../public/slider/cocktelcamaron.webp"
-import TeamImg from '../../public/img/team.webp'
+import BluejaysImg from '../../public/img/bluejays.webp'
 import DrinkImg from '../../public/img/drink.webp'
 import AritosImg from '../../public/img/food/aritos.webp'
 import AritosDesktopImg from '../../public/img/food/aritos-desktop.webp'
@@ -14,6 +14,40 @@ import SopeImg from '../../public/img/food/sope.webp'
 import Drink2Img from '../../public/img/drink-2.webp'
 import PulpeImg from '../../public/img/food/pulpe.webp'
 import NavBar from '@/components/Navbar'
+import {openGraphImage} from './shared-metadata'
+
+export const metadata = {
+  metadataBase: new URL("https://bluejayshillsboro.com/"),
+  alternates: {
+    canonical: "/",
+  },
+  title: 'Blue Jay\'s Bar',
+  description: 'Bring your family or friends to enjoy our burgers, tacos, octopus cocktails, drinks prepared by professional bartenders.',
+  keywords: "mexican food, bar, restaurant, family, hamburger, tacos, cocktails, cakes, beverages, blue jays, bluejays, bluejay's, bluejay's restaurant",
+  openGraph: {
+    ...openGraphImage,
+    title: "BlueJay's Bar and Restaurant Family",
+    description: 'Bring your family or friends to enjoy our burgers, tacos, octopus cocktails, drinks prepared by professional bartenders.'
+  },
+  creator: "Jesús Rodrigo",
+  locale: "en-US",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    }
+  },
+  icons: {
+    icon: "/favicon.ico"
+  }
+}
 
 export default function Home() {
 
@@ -38,7 +72,7 @@ export default function Home() {
           </div>
         </div>
         <div className='relative w-64 h-44 md:w-4/5 lg:w-9/12 md:h-fit'>
-          <Image src={TeamImg} alt='img from team' className='w-full'/>
+          <Image src={BluejaysImg} alt='img from bluejays' className='w-full shadow-card rounded-md'/>
           <Image src={DrinkImg} alt='img from drink' className='absolute negative-drink w-104 h-104 md:w-28 md:h-36 lg:w-20 lg:h-24'/>
         </div>
       </section>
