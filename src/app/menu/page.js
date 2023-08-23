@@ -59,9 +59,9 @@ export default function Menu(){
             </section>: null}
             {slect === 'All' || slect === 'MexicanFood'?<section className='p-2 bg-paper bg-contain relative'>
                 <h3 className='font-bold text-lg text-center my-2'>MEXICAN FOOD</h3>
-                <Image src={BirriaImg} alt='birria' className='w-40 h-auto absolute bottom-32 right-0'/>
-                <Image src={TacosImg} alt='tacos' className='w-40 h-auto absolute bottom-10 right-0'/>
-                <Image src={CarnitasImg} alt='carnitas' className='w-40 h-auto absolute top-20 right-0'/>
+                <Image src={BirriaImg} alt='birria' className='w-32 h-auto absolute bottom-32 right-0'/>
+                <Image src={TacosImg} alt='tacos' className='w-28 h-auto absolute bottom-10 right-0'/>
+                <Image src={CarnitasImg} alt='carnitas' className='w-32 h-auto absolute top-20 right-0'/>
                 <div className='w-3/4 pl-2 py-2'>
                     <h4 className='font-bold  text-sm mb-2'>CARNITAS MICHOACANAS <span className='ml-5 bg-bluejays rounded-full p-1 px-2 text-white'>$15</span></h4>
                     <p className=' text-sm leading-5'>Shredded pork cooked Michoacan style.<br/>Served with pico de gallo and green pickled jalapeno peppers.</p>
@@ -114,7 +114,7 @@ export default function Menu(){
             </section>:null}
             {slect === 'All' || slect === 'Seafood'?<section className='p-2 bg-paper bg-contain relative'>
                 <h3 className='font-bold text-lg text-center my-2'>SEAFOOD</h3>
-                <Image src={SopeCamaronImg} alt='sope camaron' className='w-40 h-auto absolute negative-menu-sope top-5'/>
+                <Image src={SopeCamaronImg} alt='sope camaron' className='w-52 h-auto absolute negative-menu-sope top-5'/>
                 <Image src={PulpeImg} alt='cocktel camaron' className='w-32 h-auto absolute right-0 bottom-0'/>
                 <div className='w-3/4 pl-2 py-2'>
                     <h4 className='font-bold  text-sm mb-2'>COCKTEL DE CAMARON <span className='ml-5 bg-bluejays rounded-full p-1 px-2 text-white'>$15</span></h4>
