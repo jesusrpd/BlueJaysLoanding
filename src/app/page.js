@@ -32,7 +32,7 @@ export const metadata = {
   creator: "Jesús Rodrigo",
   locale: "en-US",
   robots: {
-    index: true,
+    index: false,
     follow: true,
     nocache: true,
     googleBot: {
